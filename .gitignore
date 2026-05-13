@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+*.egg-info/
+
+# Venv
+.venv/
+venv/
+
+# Editor / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Local extraction / analysis state (the committed results/ stays small)
+work/
+extracted/
+ghidra_project/
+*.gpr
+*.rep/
+
+# LaTeX
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.bbl
+paper/*.blg
+
+# NVD cache (regenerated on demand)
+.nvd_cache/

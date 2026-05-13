@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+title: "firmware-analysis-walkthrough: A reproducible OpenWRT 22.03 firmware security analysis"
+message: "If you use this walkthrough or its tooling, please cite it as below."
+type: software
+authors:
+  - given-names: "Ali Murtaza"
+    family-names: "Bhutto"
+    orcid: "https://orcid.org/0009-0007-2787-943X"
+license: MIT
+repository-code: "https://github.com/thunderstornX/firmware-analysis-walkthrough"
+keywords:
+  - firmware analysis
+  - IoT security
+  - binwalk
+  - Ghidra
+  - CVE
+  - embedded systems
+  - OpenWRT
+  - MIPS
+abstract: >
+  A reproducible firmware security analysis applied to the OpenWRT
+  22.03.7 release image for the TP-Link Archer C7 v2 (ath79 /
+  mips_24kc). The walkthrough covers signature scan and extraction
+  with binwalk, squashfs unpacking with unsquashfs, filesystem
+  pattern scanning with firmwalker plus a curated credential-pattern
+  scanner, dependency-version extraction from the OpenWRT opkg
+  manifest, CVE correlation against the NVD API, and headless
+  Ghidra binary analysis of selected MIPS executables. Every step
+  is scripted, every input is sha256-pinned, and every output is
+  committed under results/.

@@ -1,0 +1,139 @@
+2026-05-13 01:40:00 INFO  (LoggingInitialization) Using log config file: jar:file:/home/alim/.local/share/ghidra/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2026-05-13 01:40:00 INFO  (LoggingInitialization) Using log file: /home/alim/Desktop/my_github_portfolio/repos/firmware-analysis-walkthrough/results/ghidra_log.txt  
+2026-05-13 01:40:00 INFO  (Preferences) Loading user preferences: /home/alim/.config/ghidra/ghidra_12.0.4_PUBLIC/preferences  
+2026-05-13 01:40:00 INFO  (ClassSearcher) Searching for classes...  
+2026-05-13 01:40:01 INFO  (ClassSearcher) Class search complete (1643 ms)  
+2026-05-13 01:40:02 INFO  (DefaultSSLContextInitializer) Initializing SSL Context  
+2026-05-13 01:40:02 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2026-05-13 01:40:02 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2026-05-13 01:40:02 INFO  (DefaultTrustManagerFactory) Trust manager disabled, cacerts have not been set  
+2026-05-13 01:40:02 INFO  (FileCacheMaintenanceDaemon) Starting cache cleanup: /var/tmp/alim-ghidra/fscache2  
+2026-05-13 01:40:02 INFO  (FileCacheMaintenanceDaemon) Finished cache cleanup, estimated storage used: 0  
+2026-05-13 01:40:02 INFO  (AnalyzeHeadless) Headless startup complete (3252 ms)  
+2026-05-13 01:40:02 INFO  (ClassSearcher) Class searcher loaded 58 extension points (18 false positives)  
+2026-05-13 01:40:02 INFO  (HeadlessAnalyzer) HEADLESS Script Paths:
+    /home/alim/.local/share/ghidra/Ghidra/Features/FunctionID/ghidra_scripts
+    /home/alim/.local/share/ghidra/Ghidra/Processors/PIC/ghidra_scripts
+    /home/alim/.local/share/ghidra/Ghidra/Debug/Debugger/ghidra_scripts
+    /home/alim/.local/share/ghidra/Ghidra/Processors/8051/ghidra_scripts
+    /home/alim/.local/share/ghidra/Ghidra/Features/BytePatterns/ghidra_scripts
+    /home/alim/.local/share/ghidra/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /home/alim/.local/share/ghidra/Ghidra/Features/PDB/ghidra_scripts
+    /home/alim/Desktop/my_github_portfolio/repos/firmware-analysis-walkthrough/scripts
+    /home/alim/.local/share/ghidra/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /home/alim/.local/share/ghidra/Ghidra/Features/PyGhidra/ghidra_scripts
+    /home/alim/.local/share/ghidra/Ghidra/Features/SwiftDemangler/ghidra_scripts
+    /home/alim/.local/share/ghidra/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /home/alim/.local/share/ghidra/Ghidra/Processors/Atmel/ghidra_scripts
+    /home/alim/.local/share/ghidra/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /home/alim/.local/share/ghidra/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /home/alim/.local/share/ghidra/Ghidra/Features/BSim/ghidra_scripts
+    /home/alim/.local/share/ghidra/Ghidra/Processors/JVM/ghidra_scripts
+    /home/alim/.local/share/ghidra/Ghidra/Features/Decompiler/ghidra_scripts
+    /home/alim/.local/share/ghidra/Ghidra/Features/VersionTracking/ghidra_scripts
+    /home/alim/.local/share/ghidra/Ghidra/Features/Base/ghidra_scripts
+    /home/alim/.local/share/ghidra/Ghidra/Features/Jython/ghidra_scripts
+    /home/alim/.local/share/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /home/alim/.local/share/ghidra/Ghidra/Processors/DATA/ghidra_scripts
+    /home/alim/.local/share/ghidra/Ghidra/Features/FileFormats/ghidra_scripts  
+2026-05-13 01:40:02 INFO  (HeadlessAnalyzer) HEADLESS: execution starts  
+2026-05-13 01:40:02 INFO  (HeadlessAnalyzer) Creating temporary project: /home/alim/Desktop/my_github_portfolio/repos/firmware-analysis-walkthrough/work/ghidra-project/fw_audit  
+2026-05-13 01:40:02 DEBUG (DefaultProjectManager) No tools found; Installing default tools  
+2026-05-13 01:40:02 DEBUG (DefaultProjectManager) 	no recent project directories found  
+2026-05-13 01:40:03 INFO  (DefaultProject) Creating project: /home/alim/Desktop/my_github_portfolio/repos/firmware-analysis-walkthrough/work/ghidra-project/fw_audit  
+2026-05-13 01:40:03 INFO  (HeadlessAnalyzer) REPORT: Processing input files:   
+2026-05-13 01:40:03 INFO  (HeadlessAnalyzer)      project: /home/alim/Desktop/my_github_portfolio/repos/firmware-analysis-walkthrough/work/ghidra-project/fw_audit  
+2026-05-13 01:40:03 INFO  (HeadlessAnalyzer) IMPORTING: file:///home/alim/Desktop/my_github_portfolio/repos/firmware-analysis-walkthrough/work/squashfs-root/bin/busybox  
+2026-05-13 01:40:04 INFO  (ProgramLoader) Using Loader: Executable and Linking Format (ELF)  
+2026-05-13 01:40:04 INFO  (ProgramLoader) Using Language/Compiler: MIPS:BE:32:default:default  
+2026-05-13 01:40:04 INFO  (ProgramLoader) Using Library Search Path: [., /bin, /lib, /lib64, /lib/x86_64-linux-gnu, /lib/aarch64-linux-gnu, /usr/bin, /usr/lib, /usr/X11R6/bin, /usr/X11R6/lib, /usr/java/packages/lib, /usr/lib64]  
+2026-05-13 01:40:05 INFO  (ProgramLoader) Additional info:
+Loading file:///home/alim/Desktop/my_github_portfolio/repos/firmware-analysis-walkthrough/work/squashfs-root/bin/busybox?MD5=f8fde7c558efb3d0e9a293cc1f5c310d...
+ELF Relocation Failure: R_MIPS_COPY (126, 0x7e) at 0045eacc (Symbol = stderr) - Runtime copy not supported (4-bytes)
+ELF Relocation Failure: R_MIPS_COPY (126, 0x7e) at 0045f038 (Symbol = optarg) - Runtime copy not supported (4-bytes)
+ELF Relocation Failure: R_MIPS_COPY (126, 0x7e) at 0045f030 (Symbol = __environ) - Runtime copy not supported (4-bytes)
+ELF Relocation Failure: R_MIPS_COPY (126, 0x7e) at 0045f040 (Symbol = __stack_chk_guard) - Runtime copy not supported (4-bytes)
+ELF Relocation Failure: R_MIPS_COPY (126, 0x7e) at 0045f044 (Symbol = optind) - Runtime copy not supported (4-bytes)
+ELF Relocation Failure: R_MIPS_COPY (126, 0x7e) at 0045ead0 (Symbol = stdout) - Runtime copy not supported (4-bytes)
+ELF Relocation Failure: R_MIPS_COPY (126, 0x7e) at 0045ead4 (Symbol = stdin) - Runtime copy not supported (4-bytes)
+Setting block segment_4 to read-only (block split was required)
+------------------------------------------------
+
+Linking the External Programs of 'busybox' to imported libraries...
+  [libgcc_s.so.1] -> not found in project
+  [libc.so] -> not found in project
+------------------------------------------------
+
+Resolving External Symbols of [/busybox] - 328 unresolved symbols, no external libraries configured - skipping
+  
+2026-05-13 01:40:05 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-05-13 01:40:06 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///home/alim/Desktop/my_github_portfolio/repos/firmware-analysis-walkthrough/work/squashfs-root/bin/busybox  
+2026-05-13 01:40:07 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:BE:32:default  
+2026-05-13 01:40:07 INFO  (PackedDatabaseCache) Packed database cache: /var/tmp/alim-ghidra/packed-db-cache  
+2026-05-13 01:40:07 DEBUG (PackedDatabaseCache) Caching packed database: /home/alim/.local/share/ghidra/Ghidra/Features/Base/data/typeinfo/generic/generic_clib.gdt  
+2026-05-13 01:40:07 DEBUG (PackedDatabase) Unpacking database /home/alim/.local/share/ghidra/Ghidra/Features/Base/data/typeinfo/generic/generic_clib.gdt -> /var/tmp/alim-ghidra/packed-db-cache/pdbC0C962AC/db.1.gbf  
+2026-05-13 01:40:07 DEBUG (PackedDatabaseCache) Cache update completed: /home/alim/.local/share/ghidra/Ghidra/Features/Base/data/typeinfo/generic/generic_clib.gdt  
+2026-05-13 01:40:08 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-05-13 01:40:09 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:BE:32:default  
+2026-05-13 01:40:09 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-05-13 01:40:10 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:BE:32:default  
+2026-05-13 01:40:10 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-05-13 01:40:10 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:BE:32:default  
+2026-05-13 01:40:10 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-05-13 01:40:16 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:BE:32:default  
+2026-05-13 01:40:16 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-05-13 01:40:24 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:BE:32:default  
+2026-05-13 01:40:24 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-05-13 01:40:32 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:BE:32:default  
+2026-05-13 01:40:32 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-05-13 01:40:36 INFO  (AutoAnalysisManager) -----------------------------------------------------
+    ASCII Strings                              0.532 secs
+    Apply Data Archives                        1.458 secs
+    Call Convention ID                         0.443 secs
+    Call-Fixup Installer                       0.064 secs
+    Create Address Tables                      0.011 secs
+    Create Address Tables - One Time           1.133 secs
+    Create Function                            0.473 secs
+    Data Reference                             0.926 secs
+    Decompiler Switch Analysis                 7.103 secs
+    Demangler GNU                              0.035 secs
+    Disassemble                                0.005 secs
+    Disassemble Entry Points                   0.119 secs
+    Embedded Media                             0.045 secs
+    External Entry References                  0.001 secs
+    Function ID                                0.042 secs
+    Function Start Search                      0.578 secs
+    MIPS Constant Reference Analyzer           5.347 secs
+    MIPS Symbol                                0.147 secs
+    MIPS UnAlligned Instruction Fix            0.099 secs
+    Non-Returning Functions - Discovered       0.596 secs
+    Non-Returning Functions - Known            0.008 secs
+    Reference                                  1.686 secs
+    Shared Return Calls                        0.240 secs
+    Stack                                      3.576 secs
+    Subroutine References                      5.803 secs
+    Subroutine References - One Time           0.004 secs
+-----------------------------------------------------
+     Total Time   30 secs
+-----------------------------------------------------
+  
+2026-05-13 01:40:36 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///home/alim/Desktop/my_github_portfolio/repos/firmware-analysis-walkthrough/work/squashfs-root/bin/busybox  
+2026-05-13 01:40:36 INFO  (HeadlessAnalyzer) REPORT: Execute script: /home/alim/Desktop/my_github_portfolio/repos/firmware-analysis-walkthrough/scripts/ghidra_script.py   
+2026-05-13 01:40:36 ERROR (HeadlessAnalyzer) REPORT SCRIPT ERROR: /home/alim/Desktop/my_github_portfolio/repos/firmware-analysis-walkthrough/scripts/ghidra_script.py : Ghidra was not started with PyGhidra. Python is not available ghidra.app.script.GhidraScriptLoadException: Ghidra was not started with PyGhidra. Python is not available
+	at ghidra.pyghidra.PyGhidraScriptProvider.getScriptInstance(PyGhidraScriptProvider.java:75)
+	at ghidra.app.util.headless.HeadlessAnalyzer.runScriptsList(HeadlessAnalyzer.java:924)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1086)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileWithImport(HeadlessAnalyzer.java:1584)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithLoader(HeadlessAnalyzer.java:1744)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1685)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1769)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:462)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:199)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:81)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+2026-05-13 01:40:36 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///home/alim/Desktop/my_github_portfolio/repos/firmware-analysis-walkthrough/work/squashfs-root/bin/busybox  
+2026-05-13 01:40:36 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///home/alim/Desktop/my_github_portfolio/repos/firmware-analysis-walkthrough/work/squashfs-root/bin/busybox  
+2026-05-13 01:40:36 INFO  (LocalFileSystem) /busybox: file created (alim)  
+2026-05-13 01:40:36 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /busybox (fw_audit:/busybox)  
+2026-05-13 01:40:36 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  

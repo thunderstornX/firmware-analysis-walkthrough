@@ -1,0 +1,4650 @@
+{
+  "arch": "MIPS",
+  "bits": 32,
+  "endian": "big",
+  "exports": [
+    {
+      "address": "0045eacc",
+      "name": "stderr"
+    },
+    {
+      "address": "0044d2e0",
+      "name": "symlink"
+    },
+    {
+      "address": "0043b320",
+      "name": "_fini"
+    },
+    {
+      "address": "0044d880",
+      "name": "chown"
+    },
+    {
+      "address": "00403a64",
+      "name": "_init"
+    },
+    {
+      "address": "0044d1e0",
+      "name": "__register_frame_info"
+    },
+    {
+      "address": "0044d930",
+      "name": "strstr"
+    },
+    {
+      "address": "0045f038",
+      "name": "optarg"
+    },
+    {
+      "address": "0044d9c0",
+      "name": "link"
+    },
+    {
+      "address": "0045f030",
+      "name": "environ"
+    },
+    {
+      "address": "0045f040",
+      "name": "__stack_chk_guard"
+    },
+    {
+      "address": "0045f044",
+      "name": "optind"
+    },
+    {
+      "address": "0045ead0",
+      "name": "stdout"
+    },
+    {
+      "address": "0044d200",
+      "name": "__deregister_frame_info"
+    },
+    {
+      "address": "0044df60",
+      "name": "__stat_time64"
+    },
+    {
+      "address": "0045f010",
+      "name": "__RLD_MAP"
+    },
+    {
+      "address": "0044e300",
+      "name": "__lstat_time64"
+    },
+    {
+      "address": "0045ead4",
+      "name": "stdin"
+    },
+    {
+      "address": "0044e380",
+      "name": "lchown"
+    },
+    {
+      "address": "00403ab0",
+      "name": "entry"
+    }
+  ],
+  "imports": [
+    {
+      "address": "EXTERNAL:00000001",
+      "library": "<EXTERNAL>",
+      "name": "opendir"
+    },
+    {
+      "address": "EXTERNAL:00000002",
+      "library": "<EXTERNAL>",
+      "name": "stpncpy"
+    },
+    {
+      "address": "EXTERNAL:00000003",
+      "library": "<EXTERNAL>",
+      "name": "getmntent"
+    },
+    {
+      "address": "EXTERNAL:00000004",
+      "library": "<EXTERNAL>",
+      "name": "execve"
+    },
+    {
+      "address": "EXTERNAL:00000005",
+      "library": "<EXTERNAL>",
+      "name": "__floatsidf"
+    },
+    {
+      "address": "EXTERNAL:00000006",
+      "library": "<EXTERNAL>",
+      "name": "fdopen"
+    },
+    {
+      "address": "EXTERNAL:00000007",
+      "library": "<EXTERNAL>",
+      "name": "execvp"
+    },
+    {
+      "address": "EXTERNAL:00000008",
+      "library": "<EXTERNAL>",
+      "name": "getspnam_r"
+    },
+    {
+      "address": "EXTERNAL:00000009",
+      "library": "<EXTERNAL>",
+      "name": "setuid"
+    },
+    {
+      "address": "EXTERNAL:0000000a",
+      "library": "<EXTERNAL>",
+      "name": "feof_unlocked"
+    },
+    {
+      "address": "EXTERNAL:0000000b",
+      "library": "<EXTERNAL>",
+      "name": "memcmp"
+    },
+    {
+      "address": "EXTERNAL:0000000c",
+      "library": "<EXTERNAL>",
+      "name": "qsort"
+    },
+    {
+      "address": "EXTERNAL:0000000d",
+      "library": "<EXTERNAL>",
+      "name": "ioctl"
+    },
+    {
+      "address": "EXTERNAL:0000000e",
+      "library": "<EXTERNAL>",
+      "name": "symlink"
+    },
+    {
+      "address": "EXTERNAL:0000000f",
+      "library": "<EXTERNAL>",
+      "name": "setpriority"
+    },
+    {
+      "address": "EXTERNAL:00000010",
+      "library": "<EXTERNAL>",
+      "name": "flock"
+    },
+    {
+      "address": "EXTERNAL:00000011",
+      "library": "<EXTERNAL>",
+      "name": "sendmsg"
+    },
+    {
+      "address": "EXTERNAL:00000012",
+      "library": "<EXTERNAL>",
+      "name": "fseeko"
+    },
+    {
+      "address": "EXTERNAL:00000013",
+      "library": "<EXTERNAL>",
+      "name": "__nedf2"
+    },
+    {
+      "address": "EXTERNAL:00000014",
+      "library": "<EXTERNAL>",
+      "name": "realloc"
+    },
+    {
+      "address": "EXTERNAL:00000015",
+      "library": "<EXTERNAL>",
+      "name": "connect"
+    },
+    {
+      "address": "EXTERNAL:00000016",
+      "library": "<EXTERNAL>",
+      "name": "write"
+    },
+    {
+      "address": "EXTERNAL:00000017",
+      "library": "<EXTERNAL>",
+      "name": "fchdir"
+    },
+    {
+      "address": "EXTERNAL:00000018",
+      "library": "<EXTERNAL>",
+      "name": "geteuid"
+    },
+    {
+      "address": "EXTERNAL:00000019",
+      "library": "<EXTERNAL>",
+      "name": "dup2"
+    },
+    {
+      "address": "EXTERNAL:0000001a",
+      "library": "<EXTERNAL>",
+      "name": "_exit"
+    },
+    {
+      "address": "EXTERNAL:0000001b",
+      "library": "<EXTERNAL>",
+      "name": "__gmtime64_r"
+    },
+    {
+      "address": "EXTERNAL:0000001c",
+      "library": "<EXTERNAL>",
+      "name": "vfork"
+    },
+    {
+      "address": "EXTERNAL:0000001d",
+      "library": "<EXTERNAL>",
+      "name": "mktemp"
+    },
+    {
+      "address": "EXTERNAL:0000001e",
+      "library": "<EXTERNAL>",
+      "name": "tcsetattr"
+    },
+    {
+      "address": "EXTERNAL:0000001f",
+      "library": "<EXTERNAL>",
+      "name": "ns_get32"
+    },
+    {
+      "address": "EXTERNAL:00000020",
+      "library": "<EXTERNAL>",
+      "name": "__bswapsi2"
+    },
+    {
+      "address": "EXTERNAL:00000021",
+      "library": "<EXTERNAL>",
+      "name": "getgid"
+    },
+    {
+      "address": "EXTERNAL:00000022",
+      "library": "<EXTERNAL>",
+      "name": "setsid"
+    },
+    {
+      "address": "EXTERNAL:00000023",
+      "library": "<EXTERNAL>",
+      "name": "endgrent"
+    },
+    {
+      "address": "EXTERNAL:00000024",
+      "library": "<EXTERNAL>",
+      "name": "sscanf"
+    },
+    {
+      "address": "EXTERNAL:00000025",
+      "library": "<EXTERNAL>",
+      "name": "fsync"
+    },
+    {
+      "address": "EXTERNAL:00000026",
+      "library": "<EXTERNAL>",
+      "name": "umount2"
+    },
+    {
+      "address": "EXTERNAL:00000027",
+      "library": "<EXTERNAL>",
+      "name": "strcspn"
+    },
+    {
+      "address": "EXTERNAL:00000028",
+      "library": "<EXTERNAL>",
+      "name": "srand"
+    },
+    {
+      "address": "EXTERNAL:00000029",
+      "library": "<EXTERNAL>",
+      "name": "getpagesize"
+    },
+    {
+      "address": "EXTERNAL:0000002a",
+      "library": "<EXTERNAL>",
+      "name": "pipe"
+    },
+    {
+      "address": "EXTERNAL:0000002b",
+      "library": "<EXTERNAL>",
+      "name": "access"
+    },
+    {
+      "address": "EXTERNAL:0000002c",
+      "library": "<EXTERNAL>",
+      "name": "__floatunsidf"
+    },
+    {
+      "address": "EXTERNAL:0000002d",
+      "library": "<EXTERNAL>",
+      "name": "snprintf"
+    },
+    {
+      "address": "EXTERNAL:0000002e",
+      "library": "<EXTERNAL>",
+      "name": "dup"
+    },
+    {
+      "address": "EXTERNAL:0000002f",
+      "library": "<EXTERNAL>",
+      "name": "__mktime64"
+    },
+    {
+      "address": "EXTERNAL:00000030",
+      "library": "<EXTERNAL>",
+      "name": "__truncdfsf2"
+    },
+    {
+      "address": "EXTERNAL:00000031",
+      "library": "<EXTERNAL>",
+      "name": "signal"
+    },
+    {
+      "address": "EXTERNAL:00000032",
+      "library": "<EXTERNAL>",
+      "name": "lseek"
+    },
+    {
+      "address": "EXTERNAL:00000033",
+      "library": "<EXTERNAL>",
+      "name": "recvmsg"
+    },
+    {
+      "address": "EXTERNAL:00000034",
+      "library": "<EXTERNAL>",
+      "name": "freopen"
+    },
+    {
+      "address": "EXTERNAL:00000035",
+      "library": "<EXTERNAL>",
+      "name": "cos"
+    },
+    {
+      "address": "EXTERNAL:00000036",
+      "library": "<EXTERNAL>",
+      "name": "getpid"
+    },
+    {
+      "address": "EXTERNAL:00000037",
+      "library": "<EXTERNAL>",
+      "name": "strcmp"
+    },
+    {
+      "address": "EXTERNAL:00000038",
+      "library": "<EXTERNAL>",
+      "name": "readdir"
+    },
+    {
+      "address": "EXTERNAL:00000039",
+      "library": "<EXTERNAL>",
+      "name": "__eqdf2"
+    },
+    {
+      "address": "EXTERNAL:0000003a",
+      "library": "<EXTERNAL>",
+      "name": "__floatdidf"
+    },
+    {
+      "address": "EXTERNAL:0000003b",
+      "library": "<EXTERNAL>",
+      "name": "strndup"
+    },
+    {
+      "address": "EXTERNAL:0000003c",
+      "library": "<EXTERNAL>",
+      "name": "__ashldi3"
+    },
+    {
+      "address": "EXTERNAL:0000003d",
+      "library": "<EXTERNAL>",
+      "name": "memset"
+    },
+    {
+      "address": "EXTERNAL:0000003e",
+      "library": "<EXTERNAL>",
+      "name": "setgid"
+    },
+    {
+      "address": "EXTERNAL:0000003f",
+      "library": "<EXTERNAL>",
+      "name": "stpcpy"
+    },
+    {
+      "address": "EXTERNAL:00000040",
+      "library": "<EXTERNAL>",
+      "name": "unlink"
+    },
+    {
+      "address": "EXTERNAL:00000041",
+      "library": "<EXTERNAL>",
+      "name": "putenv"
+    },
+    {
+      "address": "EXTERNAL:00000042",
+      "library": "<EXTERNAL>",
+      "name": "__fstat_time64"
+    },
+    {
+      "address": "EXTERNAL:00000043",
+      "library": "<EXTERNAL>",
+      "name": "regerror"
+    },
+    {
+      "address": "EXTERNAL:00000044",
+      "library": "<EXTERNAL>",
+      "name": "getpriority"
+    },
+    {
+      "address": "EXTERNAL:00000045",
+      "library": "<EXTERNAL>",
+      "name": "recvfrom"
+    },
+    {
+      "address": "EXTERNAL:00000046",
+      "library": "<EXTERNAL>",
+      "name": "closelog"
+    },
+    {
+      "address": "EXTERNAL:00000047",
+      "library": "<EXTERNAL>",
+      "name": "malloc"
+    },
+    {
+      "address": "EXTERNAL:00000048",
+      "library": "<EXTERNAL>",
+      "name": "getcwd"
+    },
+    {
+      "address": "EXTERNAL:00000049",
+      "library": "<EXTERNAL>",
+      "name": "fork"
+    },
+    {
+      "address": "EXTERNAL:0000004a",
+      "library": "<EXTERNAL>",
+      "name": "strverscmp"
+    },
+    {
+      "address": "EXTERNAL:0000004b",
+      "library": "<EXTERNAL>",
+      "name": "memmove"
+    },
+    {
+      "address": "EXTERNAL:0000004c",
+      "library": "<EXTERNAL>",
+      "name": "gethostbyname"
+    },
+    {
+      "address": "EXTERNAL:0000004d",
+      "library": "<EXTERNAL>",
+      "name": "strcat"
+    },
+    {
+      "address": "EXTERNAL:0000004e",
+      "library": "<EXTERNAL>",
+      "name": "getmntent_r"
+    },
+    {
+      "address": "EXTERNAL:0000004f",
+      "library": "<EXTERNAL>",
+      "name": "strcasestr"
+    },
+    {
+      "address": "EXTERNAL:00000050",
+      "library": "<EXTERNAL>",
+      "name": "rand"
+    },
+    {
+      "address": "EXTERNAL:00000051",
+      "library": "<EXTERNAL>",
+      "name": "fflush"
+    },
+    {
+      "address": "EXTERNAL:00000052",
+      "library": "<EXTERNAL>",
+      "name": "log"
+    },
+    {
+      "address": "EXTERNAL:00000053",
+      "library": "<EXTERNAL>",
+      "name": "fchown"
+    },
+    {
+      "address": "EXTERNAL:00000054",
+      "library": "<EXTERNAL>",
+      "name": "strncmp"
+    },
+    {
+      "address": "EXTERNAL:00000055",
+      "library": "<EXTERNAL>",
+      "name": "system"
+    },
+    {
+      "address": "EXTERNAL:00000056",
+      "library": "<EXTERNAL>",
+      "name": "recv"
+    },
+    {
+      "address": "EXTERNAL:00000057",
+      "library": "<EXTERNAL>",
+      "name": "__clock_settime64"
+    },
+    {
+      "address": "EXTERNAL:00000058",
+      "library": "<EXTERNAL>",
+      "name": "__divdf3"
+    },
+    {
+      "address": "EXTERNAL:00000059",
+      "library": "<EXTERNAL>",
+      "name": "strcpy"
+    },
+    {
+      "address": "EXTERNAL:0000005a",
+      "library": "<EXTERNAL>",
+      "name": "chroot"
+    },
+    {
+      "address": "EXTERNAL:0000005b",
+      "library": "<EXTERNAL>",
+      "name": "__ltdf2"
+    },
+    {
+      "address": "EXTERNAL:0000005c",
+      "library": "<EXTERNAL>",
+      "name": "getgrnam"
+    },
+    {
+      "address": "EXTERNAL:0000005d",
+      "library": "<EXTERNAL>",
+      "name": "__floatundidf"
+    },
+    {
+      "address": "EXTERNAL:0000005e",
+      "library": "<EXTERNAL>",
+      "name": "strrchr"
+    },
+    {
+      "address": "EXTERNAL:0000005f",
+      "library": "<EXTERNAL>",
+      "name": "sigsetjmp"
+    },
+    {
+      "address": "EXTERNAL:00000060",
+      "library": "<EXTERNAL>",
+      "name": "getnameinfo"
+    },
+    {
+      "address": "EXTERNAL:00000061",
+      "library": "<EXTERNAL>",
+      "name": "__gedf2"
+    },
+    {
+      "address": "EXTERNAL:00000062",
+      "library": "<EXTERNAL>",
+      "name": "closedir"
+    },
+    {
+      "address": "EXTERNAL:00000063",
+      "library": "<EXTERNAL>",
+      "name": "dprintf"
+    },
+    {
+      "address": "EXTERNAL:00000064",
+      "library": "<EXTERNAL>",
+      "name": "strnlen"
+    },
+    {
+      "address": "EXTERNAL:00000065",
+      "library": "<EXTERNAL>",
+      "name": "fclose"
+    },
+    {
+      "address": "EXTERNAL:00000066",
+      "library": "<EXTERNAL>",
+      "name": "sqrt"
+    },
+    {
+      "address": "EXTERNAL:00000067",
+      "library": "<EXTERNAL>",
+      "name": "setjmp"
+    },
+    {
+      "address": "EXTERNAL:00000068",
+      "library": "<EXTERNAL>",
+      "name": "chown"
+    },
+    {
+      "address": "EXTERNAL:00000069",
+      "library": "<EXTERNAL>",
+      "name": "setenv"
+    },
+    {
+      "address": "EXTERNAL:0000006a",
+      "library": "<EXTERNAL>",
+      "name": "strdup"
+    },
+    {
+      "address": "EXTERNAL:0000006b",
+      "library": "<EXTERNAL>",
+      "name": "inet_addr"
+    },
+    {
+      "address": "EXTERNAL:0000006c",
+      "library": "<EXTERNAL>",
+      "name": "sleep"
+    },
+    {
+      "address": "EXTERNAL:0000006d",
+      "library": "<EXTERNAL>",
+      "name": "wait"
+    },
+    {
+      "address": "EXTERNAL:0000006e",
+      "library": "<EXTERNAL>",
+      "name": "open"
+    },
+    {
+      "address": "EXTERNAL:0000006f",
+      "library": "<EXTERNAL>",
+      "name": "__clock_gettime64"
+    },
+    {
+      "address": "EXTERNAL:00000070",
+      "library": "<EXTERNAL>",
+      "name": "__register_frame_info"
+    },
+    {
+      "address": "EXTERNAL:00000071",
+      "library": "<EXTERNAL>",
+      "name": "pow"
+    },
+    {
+      "address": "EXTERNAL:00000072",
+      "library": "<EXTERNAL>",
+      "name": "getgrgid"
+    },
+    {
+      "address": "EXTERNAL:00000073",
+      "library": "<EXTERNAL>",
+      "name": "strtoll"
+    },
+    {
+      "address": "EXTERNAL:00000074",
+      "library": "<EXTERNAL>",
+      "name": "strstr"
+    },
+    {
+      "address": "EXTERNAL:00000075",
+      "library": "<EXTERNAL>",
+      "name": "ns_name_uncompress"
+    },
+    {
+      "address": "EXTERNAL:00000076",
+      "library": "<EXTERNAL>",
+      "name": "vfprintf"
+    },
+    {
+      "address": "EXTERNAL:00000077",
+      "library": "<EXTERNAL>",
+      "name": "kill"
+    },
+    {
+      "address": "EXTERNAL:00000078",
+      "library": "<EXTERNAL>",
+      "name": "rename"
+    },
+    {
+      "address": "EXTERNAL:00000079",
+      "library": "<EXTERNAL>",
+      "name": "syslog"
+    },
+    {
+      "address": "EXTERNAL:0000007a",
+      "library": "<EXTERNAL>",
+      "name": "strtok_r"
+    },
+    {
+      "address": "EXTERNAL:0000007b",
+      "library": "<EXTERNAL>",
+      "name": "unsetenv"
+    },
+    {
+      "address": "EXTERNAL:0000007c",
+      "library": "<EXTERNAL>",
+      "name": "getpwnam"
+    },
+    {
+      "address": "EXTERNAL:0000007d",
+      "library": "<EXTERNAL>",
+      "name": "link"
+    },
+    {
+      "address": "EXTERNAL:0000007e",
+      "library": "<EXTERNAL>",
+      "name": "__utimes_time64"
+    },
+    {
+      "address": "EXTERNAL:0000007f",
+      "library": "<EXTERNAL>",
+      "name": "fscanf"
+    },
+    {
+      "address": "EXTERNAL:00000080",
+      "library": "<EXTERNAL>",
+      "name": "getsockname"
+    },
+    {
+      "address": "EXTERNAL:00000081",
+      "library": "<EXTERNAL>",
+      "name": "perror"
+    },
+    {
+      "address": "EXTERNAL:00000082",
+      "library": "<EXTERNAL>",
+      "name": "__futimens_time64"
+    },
+    {
+      "address": "EXTERNAL:00000083",
+      "library": "<EXTERNAL>",
+      "name": "__utimensat_time64"
+    },
+    {
+      "address": "EXTERNAL:00000084",
+      "library": "<EXTERNAL>",
+      "name": "strchr"
+    },
+    {
+      "address": "EXTERNAL:00000085",
+      "library": "<EXTERNAL>",
+      "name": "strncasecmp"
+    },
+    {
+      "address": "EXTERNAL:00000086",
+      "library": "<EXTERNAL>",
+      "name": "chmod"
+    },
+    {
+      "address": "EXTERNAL:00000087",
+      "library": "<EXTERNAL>",
+      "name": "inet_pton"
+    },
+    {
+      "address": "EXTERNAL:00000088",
+      "library": "<EXTERNAL>",
+      "name": "__fixunsdfsi"
+    },
+    {
+      "address": "EXTERNAL:00000089",
+      "library": "<EXTERNAL>",
+      "name": "__lshrdi3"
+    },
+    {
+      "address": "EXTERNAL:0000008a",
+      "library": "<EXTERNAL>",
+      "name": "strspn"
+    },
+    {
+      "address": "EXTERNAL:0000008b",
+      "library": "<EXTERNAL>",
+      "name": "strpbrk"
+    },
+    {
+      "address": "EXTERNAL:0000008c",
+      "library": "<EXTERNAL>",
+      "name": "crypt"
+    },
+    {
+      "address": "EXTERNAL:0000008d",
+      "library": "<EXTERNAL>",
+      "name": "getgroups"
+    },
+    {
+      "address": "EXTERNAL:0000008e",
+      "library": "<EXTERNAL>",
+      "name": "bind"
+    },
+    {
+      "address": "EXTERNAL:0000008f",
+      "library": "<EXTERNAL>",
+      "name": "reboot"
+    },
+    {
+      "address": "EXTERNAL:00000090",
+      "library": "<EXTERNAL>",
+      "name": "getppid"
+    },
+    {
+      "address": "EXTERNAL:00000091",
+      "library": "<EXTERNAL>",
+      "name": "if_nametoindex"
+    },
+    {
+      "address": "EXTERNAL:00000092",
+      "library": "<EXTERNAL>",
+      "name": "poll"
+    },
+    {
+      "address": "EXTERNAL:00000093",
+      "library": "<EXTERNAL>",
+      "name": "fgets_unlocked"
+    },
+    {
+      "address": "EXTERNAL:00000094",
+      "library": "<EXTERNAL>",
+      "name": "mount"
+    },
+    {
+      "address": "EXTERNAL:00000095",
+      "library": "<EXTERNAL>",
+      "name": "getpwuid"
+    },
+    {
+      "address": "EXTERNAL:00000096",
+      "library": "<EXTERNAL>",
+      "name": "popen"
+    },
+    {
+      "address": "EXTERNAL:00000097",
+      "library": "<EXTERNAL>",
+      "name": "printf"
+    },
+    {
+      "address": "EXTERNAL:00000098",
+      "library": "<EXTERNAL>",
+      "name": "__localtime64_r"
+    },
+    {
+      "address": "EXTERNAL:00000099",
+      "library": "<EXTERNAL>",
+      "name": "__ashrdi3"
+    },
+    {
+      "address": "EXTERNAL:0000009a",
+      "library": "<EXTERNAL>",
+      "name": "fnmatch"
+    },
+    {
+      "address": "EXTERNAL:0000009b",
+      "library": "<EXTERNAL>",
+      "name": "__gtdf2"
+    },
+    {
+      "address": "EXTERNAL:0000009c",
+      "library": "<EXTERNAL>",
+      "name": "waitpid"
+    },
+    {
+      "address": "EXTERNAL:0000009d",
+      "library": "<EXTERNAL>",
+      "name": "fwrite"
+    },
+    {
+      "address": "EXTERNAL:0000009e",
+      "library": "<EXTERNAL>",
+      "name": "getegid"
+    },
+    {
+      "address": "EXTERNAL:0000009f",
+      "library": "<EXTERNAL>",
+      "name": "__libc_start_main"
+    },
+    {
+      "address": "EXTERNAL:000000a0",
+      "library": "<EXTERNAL>",
+      "name": "regfree"
+    },
+    {
+      "address": "EXTERNAL:000000a1",
+      "library": "<EXTERNAL>",
+      "name": "alarm"
+    },
+    {
+      "address": "EXTERNAL:000000a2",
+      "library": "<EXTERNAL>",
+      "name": "ns_initparse"
+    },
+    {
+      "address": "EXTERNAL:000000a3",
+      "library": "<EXTERNAL>",
+      "name": "readlink"
+    },
+    {
+      "address": "EXTERNAL:000000a4",
+      "library": "<EXTERNAL>",
+      "name": "swapon"
+    },
+    {
+      "address": "EXTERNAL:000000a5",
+      "library": "<EXTERNAL>",
+      "name": "strncpy"
+    },
+    {
+      "address": "EXTERNAL:000000a6",
+      "library": "<EXTERNAL>",
+      "name": "tzset"
+    },
+    {
+      "address": "EXTERNAL:000000a7",
+      "library": "<EXTERNAL>",
+      "name": "sigemptyset"
+    },
+    {
+      "address": "EXTERNAL:000000a8",
+      "library": "<EXTERNAL>",
+      "name": "mempcpy"
+    },
+    {
+      "address": "EXTERNAL:000000a9",
+      "library": "<EXTERNAL>",
+      "name": "getchar_unlocked"
+    },
+    {
+      "address": "EXTERNAL:000000aa",
+      "library": "<EXTERNAL>",
+      "name": "setrlimit"
+    },
+    {
+      "address": "EXTERNAL:000000ab",
+      "library": "<EXTERNAL>",
+      "name": "dirname"
+    },
+    {
+      "address": "EXTERNAL:000000ac",
+      "library": "<EXTERNAL>",
+      "name": "exit"
+    },
+    {
+      "address": "EXTERNAL:000000ad",
+      "library": "<EXTERNAL>",
+      "name": "raise"
+    },
+    {
+      "address": "EXTERNAL:000000ae",
+      "library": "<EXTERNAL>",
+      "name": "strptime"
+    },
+    {
+      "address": "EXTERNAL:000000af",
+      "library": "<EXTERNAL>",
+      "name": "__wait3_time64"
+    },
+    {
+      "address": "EXTERNAL:000000b0",
+      "library": "<EXTERNAL>",
+      "name": "ttyname_r"
+    },
+    {
+      "address": "EXTERNAL:000000b1",
+      "library": "<EXTERNAL>",
+      "name": "fprintf"
+    },
+    {
+      "address": "EXTERNAL:000000b2",
+      "library": "<EXTERNAL>",
+      "name": "vprintf"
+    },
+    {
+      "address": "EXTERNAL:000000b3",
+      "library": "<EXTERNAL>",
+      "name": "strchrnul"
+    },
+    {
+      "address": "EXTERNAL:000000b4",
+      "library": "<EXTERNAL>",
+      "name": "memrchr"
+    },
+    {
+      "address": "EXTERNAL:000000b5",
+      "library": "<EXTERNAL>",
+      "name": "execlp"
+    },
+    {
+      "address": "EXTERNAL:000000b6",
+      "library": "<EXTERNAL>",
+      "name": "ns_get16"
+    },
+    {
+      "address": "EXTERNAL:000000b7",
+      "library": "<EXTERNAL>",
+      "name": "__bswapdi2"
+    },
+    {
+      "address": "EXTERNAL:000000b8",
+      "library": "<EXTERNAL>",
+      "name": "tcgetattr"
+    },
+    {
+      "address": "EXTERNAL:000000b9",
+      "library": "<EXTERNAL>",
+      "name": "__divdi3"
+    },
+    {
+      "address": "EXTERNAL:000000ba",
+      "library": "<EXTERNAL>",
+      "name": "freeaddrinfo"
+    },
+    {
+      "address": "EXTERNAL:000000bb",
+      "library": "<EXTERNAL>",
+      "name": "setegid"
+    },
+    {
+      "address": "EXTERNAL:000000bc",
+      "library": "<EXTERNAL>",
+      "name": "getservbyname"
+    },
+    {
+      "address": "EXTERNAL:000000bd",
+      "library": "<EXTERNAL>",
+      "name": "strtoul"
+    },
+    {
+      "address": "EXTERNAL:000000be",
+      "library": "<EXTERNAL>",
+      "name": "fread"
+    },
+    {
+      "address": "EXTERNAL:000000bf",
+      "library": "<EXTERNAL>",
+      "name": "socket"
+    },
+    {
+      "address": "EXTERNAL:000000c0",
+      "library": "<EXTERNAL>",
+      "name": "getsid"
+    },
+    {
+      "address": "EXTERNAL:000000c1",
+      "library": "<EXTERNAL>",
+      "name": "close"
+    },
+    {
+      "address": "EXTERNAL:000000c2",
+      "library": "<EXTERNAL>",
+      "name": "mkstemp"
+    },
+    {
+      "address": "EXTERNAL:000000c3",
+      "library": "<EXTERNAL>",
+      "name": "sysconf"
+    },
+    {
+      "address": "EXTERNAL:000000c4",
+      "library": "<EXTERNAL>",
+      "name": "killpg"
+    },
+    {
+      "address": "EXTERNAL:000000c5",
+      "library": "<EXTERNAL>",
+      "name": "umask"
+    },
+    {
+      "address": "EXTERNAL:000000c6",
+      "library": "<EXTERNAL>",
+      "name": "putchar_unlocked"
+    },
+    {
+      "address": "EXTERNAL:000000c7",
+      "library": "<EXTERNAL>",
+      "name": "sin"
+    },
+    {
+      "address": "EXTERNAL:000000c8",
+      "library": "<EXTERNAL>",
+      "name": "regexec"
+    },
+    {
+      "address": "EXTERNAL:000000c9",
+      "library": "<EXTERNAL>",
+      "name": "fileno_unlocked"
+    },
+    {
+      "address": "EXTERNAL:000000ca",
+      "library": "<EXTERNAL>",
+      "name": "res_mkquery"
+    },
+    {
+      "address": "EXTERNAL:000000cb",
+      "library": "<EXTERNAL>",
+      "name": "getrlimit"
+    },
+    {
+      "address": "EXTERNAL:000000cc",
+      "library": "<EXTERNAL>",
+      "name": "execl"
+    },
+    {
+      "address": "EXTERNAL:000000cd",
+      "library": "<EXTERNAL>",
+      "name": "__deregister_frame_info"
+    },
+    {
+      "address": "EXTERNAL:000000ce",
+      "library": "<EXTERNAL>",
+      "name": "ns_parserr"
+    },
+    {
+      "address": "EXTERNAL:000000cf",
+      "library": "<EXTERNAL>",
+      "name": "inet_aton"
+    },
+    {
+      "address": "EXTERNAL:000000d0",
+      "library": "<EXTERNAL>",
+      "name": "setbuf"
+    },
+    {
+      "address": "EXTERNAL:000000d1",
+      "library": "<EXTERNAL>",
+      "name": "read"
+    },
+    {
+      "address": "EXTERNAL:000000d2",
+      "library": "<EXTERNAL>",
+      "name": "getgrouplist"
+    },
+    {
+      "address": "EXTERNAL:000000d3",
+      "library": "<EXTERNAL>",
+      "name": "__ledf2"
+    },
+    {
+      "address": "EXTERNAL:000000d4",
+      "library": "<EXTERNAL>",
+      "name": "initgroups"
+    },
+    {
+      "address": "EXTERNAL:000000d5",
+      "library": "<EXTERNAL>",
+      "name": "seteuid"
+    },
+    {
+      "address": "EXTERNAL:000000d6",
+      "library": "<EXTERNAL>",
+      "name": "htons"
+    },
+    {
+      "address": "EXTERNAL:000000d7",
+      "library": "<EXTERNAL>",
+      "name": "rmdir"
+    },
+    {
+      "address": "EXTERNAL:000000d8",
+      "library": "<EXTERNAL>",
+      "name": "sigprocmask"
+    },
+    {
+      "address": "EXTERNAL:000000d9",
+      "library": "<EXTERNAL>",
+      "name": "__stat_time64"
+    },
+    {
+      "address": "EXTERNAL:000000da",
+      "library": "<EXTERNAL>",
+      "name": "mknod"
+    },
+    {
+      "address": "EXTERNAL:000000db",
+      "library": "<EXTERNAL>",
+      "name": "htonl"
+    },
+    {
+      "address": "EXTERNAL:000000dc",
+      "library": "<EXTERNAL>",
+      "name": "prctl"
+    },
+    {
+      "address": "EXTERNAL:000000dd",
+      "library": "<EXTERNAL>",
+      "name": "openlog"
+    },
+    {
+      "address": "EXTERNAL:000000de",
+      "library": "<EXTERNAL>",
+      "name": "__muldf3"
+    },
+    {
+      "address": "EXTERNAL:000000df",
+      "library": "<EXTERNAL>",
+      "name": "putc_unlocked"
+    },
+    {
+      "address": "EXTERNAL:000000e0",
+      "library": "<EXTERNAL>",
+      "name": "__time64"
+    },
+    {
+      "address": "EXTERNAL:000000e1",
+      "library": "<EXTERNAL>",
+      "name": "strtoull"
+    },
+    {
+      "address": "EXTERNAL:000000e2",
+      "library": "<EXTERNAL>",
+      "name": "__errno_location"
+    },
+    {
+      "address": "EXTERNAL:000000e3",
+      "library": "<EXTERNAL>",
+      "name": "setsockopt"
+    },
+    {
+      "address": "EXTERNAL:000000e4",
+      "library": "<EXTERNAL>",
+      "name": "bsearch"
+    },
+    {
+      "address": "EXTERNAL:000000e5",
+      "library": "<EXTERNAL>",
+      "name": "setmntent"
+    },
+    {
+      "address": "EXTERNAL:000000e6",
+      "library": "<EXTERNAL>",
+      "name": "mkdir"
+    },
+    {
+      "address": "EXTERNAL:000000e7",
+      "library": "<EXTERNAL>",
+      "name": "getpgrp"
+    },
+    {
+      "address": "EXTERNAL:000000e8",
+      "library": "<EXTERNAL>",
+      "name": "sigsuspend"
+    },
+    {
+      "address": "EXTERNAL:000000e9",
+      "library": "<EXTERNAL>",
+      "name": "fcntl"
+    },
+    {
+      "address": "EXTERNAL:000000ea",
+      "library": "<EXTERNAL>",
+      "name": "__nanosleep_time64"
+    },
+    {
+      "address": "EXTERNAL:000000eb",
+      "library": "<EXTERNAL>",
+      "name": "clearenv"
+    },
+    {
+      "address": "EXTERNAL:000000ec",
+      "library": "<EXTERNAL>",
+      "name": "getservbyport"
+    },
+    {
+      "address": "EXTERNAL:000000ed",
+      "library": "<EXTERNAL>",
+      "name": "__gettimeofday_time64"
+    },
+    {
+      "address": "EXTERNAL:000000ee",
+      "library": "<EXTERNAL>",
+      "name": "clearerr"
+    },
+    {
+      "address": "EXTERNAL:000000ef",
+      "library": "<EXTERNAL>",
+      "name": "fputs"
+    },
+    {
+      "address": "EXTERNAL:000000f0",
+      "library": "<EXTERNAL>",
+      "name": "realpath"
+    },
+    {
+      "address": "EXTERNAL:000000f1",
+      "library": "<EXTERNAL>",
+      "name": "vsnprintf"
+    },
+    {
+      "address": "EXTERNAL:000000f2",
+      "library": "<EXTERNAL>",
+      "name": "__fixdfdi"
+    },
+    {
+      "address": "EXTERNAL:000000f3",
+      "library": "<EXTERNAL>",
+      "name": "setpgid"
+    },
+    {
+      "address": "EXTERNAL:000000f4",
+      "library": "<EXTERNAL>",
+      "name": "chdir"
+    },
+    {
+      "address": "EXTERNAL:000000f5",
+      "library": "<EXTERNAL>",
+      "name": "sync"
+    },
+    {
+      "address": "EXTERNAL:000000f6",
+      "library": "<EXTERNAL>",
+      "name": "__settimeofday_time64"
+    },
+    {
+      "address": "EXTERNAL:000000f7",
+      "library": "<EXTERNAL>",
+      "name": "ftruncate"
+    },
+    {
+      "address": "EXTERNAL:000000f8",
+      "library": "<EXTERNAL>",
+      "name": "pivot_root"
+    },
+    {
+      "address": "EXTERNAL:000000f9",
+      "library": "<EXTERNAL>",
+      "name": "statfs"
+    },
+    {
+      "address": "EXTERNAL:000000fa",
+      "library": "<EXTERNAL>",
+      "name": "syscall"
+    },
+    {
+      "address": "EXTERNAL:000000fb",
+      "library": "<EXTERNAL>",
+      "name": "mkfifo"
+    },
+    {
+      "address": "EXTERNAL:000000fc",
+      "library": "<EXTERNAL>",
+      "name": "execv"
+    },
+    {
+      "address": "EXTERNAL:000000fd",
+      "library": "<EXTERNAL>",
+      "name": "__udivdi3"
+    },
+    {
+      "address": "EXTERNAL:000000fe",
+      "library": "<EXTERNAL>",
+      "name": "times"
+    },
+    {
+      "address": "EXTERNAL:000000ff",
+      "library": "<EXTERNAL>",
+      "name": "statvfs"
+    },
+    {
+      "address": "EXTERNAL:00000100",
+      "library": "<EXTERNAL>",
+      "name": "sendto"
+    },
+    {
+      "address": "EXTERNAL:00000101",
+      "library": "<EXTERNAL>",
+      "name": "__umoddi3"
+    },
+    {
+      "address": "EXTERNAL:00000102",
+      "library": "<EXTERNAL>",
+      "name": "getopt"
+    },
+    {
+      "address": "EXTERNAL:00000103",
+      "library": "<EXTERNAL>",
+      "name": "free"
+    },
+    {
+      "address": "EXTERNAL:00000104",
+      "library": "<EXTERNAL>",
+      "name": "__moddi3"
+    },
+    {
+      "address": "EXTERNAL:00000105",
+      "library": "<EXTERNAL>",
+      "name": "strftime"
+    },
+    {
+      "address": "EXTERNAL:00000106",
+      "library": "<EXTERNAL>",
+      "name": "tcflush"
+    },
+    {
+      "address": "EXTERNAL:00000107",
+      "library": "<EXTERNAL>",
+      "name": "pclose"
+    },
+    {
+      "address": "EXTERNAL:00000108",
+      "library": "<EXTERNAL>",
+      "name": "atoi"
+    },
+    {
+      "address": "EXTERNAL:00000109",
+      "library": "<EXTERNAL>",
+      "name": "isatty"
+    },
+    {
+      "address": "EXTERNAL:0000010a",
+      "library": "<EXTERNAL>",
+      "name": "ungetc"
+    },
+    {
+      "address": "EXTERNAL:0000010b",
+      "library": "<EXTERNAL>",
+      "name": "memchr"
+    },
+    {
+      "address": "EXTERNAL:0000010c",
+      "library": "<EXTERNAL>",
+      "name": "hasmntopt"
+    },
+    {
+      "address": "EXTERNAL:0000010d",
+      "library": "<EXTERNAL>",
+      "name": "__localtime64"
+    },
+    {
+      "address": "EXTERNAL:0000010e",
+      "library": "<EXTERNAL>",
+      "name": "siglongjmp"
+    },
+    {
+      "address": "EXTERNAL:0000010f",
+      "library": "<EXTERNAL>",
+      "name": "inet_ntoa"
+    },
+    {
+      "address": "EXTERNAL:00000110",
+      "library": "<EXTERNAL>",
+      "name": "__subdf3"
+    },
+    {
+      "address": "EXTERNAL:00000111",
+      "library": "<EXTERNAL>",
+      "name": "__adjtimex_time64"
+    },
+    {
+      "address": "EXTERNAL:00000112",
+      "library": "<EXTERNAL>",
+      "name": "puts"
+    },
+    {
+      "address": "EXTERNAL:00000113",
+      "library": "<EXTERNAL>",
+      "name": "__lstat_time64"
+    },
+    {
+      "address": "EXTERNAL:00000114",
+      "library": "<EXTERNAL>",
+      "name": "tcsetpgrp"
+    },
+    {
+      "address": "EXTERNAL:00000115",
+      "library": "<EXTERNAL>",
+      "name": "endmntent"
+    },
+    {
+      "address": "EXTERNAL:00000116",
+      "library": "<EXTERNAL>",
+      "name": "strerror"
+    },
+    {
+      "address": "EXTERNAL:00000117",
+      "library": "<EXTERNAL>",
+      "name": "fopen"
+    },
+    {
+      "address": "EXTERNAL:00000118",
+      "library": "<EXTERNAL>",
+      "name": "ferror_unlocked"
+    },
+    {
+      "address": "EXTERNAL:00000119",
+      "library": "<EXTERNAL>",
+      "name": "longjmp"
+    },
+    {
+      "address": "EXTERNAL:0000011a",
+      "library": "<EXTERNAL>",
+      "name": "__adddf3"
+    },
+    {
+      "address": "EXTERNAL:0000011b",
+      "library": "<EXTERNAL>",
+      "name": "lchown"
+    },
+    {
+      "address": "EXTERNAL:0000011c",
+      "library": "<EXTERNAL>",
+      "name": "vasprintf"
+    },
+    {
+      "address": "EXTERNAL:0000011d",
+      "library": "<EXTERNAL>",
+      "name": "fputs_unlocked"
+    },
+    {
+      "address": "EXTERNAL:0000011e",
+      "library": "<EXTERNAL>",
+      "name": "ntohl"
+    },
+    {
+      "address": "EXTERNAL:0000011f",
+      "library": "<EXTERNAL>",
+      "name": "strsignal"
+    },
+    {
+      "address": "EXTERNAL:00000120",
+      "library": "<EXTERNAL>",
+      "name": "ntohs"
+    },
+    {
+      "address": "EXTERNAL:00000121",
+      "library": "<EXTERNAL>",
+      "name": "getc_unlocked"
+    },
+    {
+      "address": "EXTERNAL:00000122",
+      "library": "<EXTERNAL>",
+      "name": "tcgetpgrp"
+    },
+    {
+      "address": "EXTERNAL:00000123",
+      "library": "<EXTERNAL>",
+      "name": "inet_ntop"
+    },
+    {
+      "address": "EXTERNAL:00000124",
+      "library": "<EXTERNAL>",
+      "name": "setpgrp"
+    },
+    {
+      "address": "EXTERNAL:00000125",
+      "library": "<EXTERNAL>",
+      "name": "sigaddset"
+    },
+    {
+      "address": "EXTERNAL:00000126",
+      "library": "<EXTERNAL>",
+      "name": "atan2"
+    },
+    {
+      "address": "EXTERNAL:00000127",
+      "library": "<EXTERNAL>",
+      "name": "exp"
+    },
+    {
+      "address": "EXTERNAL:00000128",
+      "library": "<EXTERNAL>",
+      "name": "sprintf"
+    },
+    {
+      "address": "EXTERNAL:00000129",
+      "library": "<EXTERNAL>",
+      "name": "getenv"
+    },
+    {
+      "address": "EXTERNAL:0000012a",
+      "library": "<EXTERNAL>",
+      "name": "sendfile"
+    },
+    {
+      "address": "EXTERNAL:0000012b",
+      "library": "<EXTERNAL>",
+      "name": "__fixdfsi"
+    },
+    {
+      "address": "EXTERNAL:0000012c",
+      "library": "<EXTERNAL>",
+      "name": "__ctime64"
+    },
+    {
+      "address": "EXTERNAL:0000012d",
+      "library": "<EXTERNAL>",
+      "name": "sigaction"
+    },
+    {
+      "address": "EXTERNAL:0000012e",
+      "library": "<EXTERNAL>",
+      "name": "__extendsfdf2"
+    },
+    {
+      "address": "EXTERNAL:0000012f",
+      "library": "<EXTERNAL>",
+      "name": "memcpy"
+    },
+    {
+      "address": "EXTERNAL:00000130",
+      "library": "<EXTERNAL>",
+      "name": "sigfillset"
+    },
+    {
+      "address": "EXTERNAL:00000131",
+      "library": "<EXTERNAL>",
+      "name": "fdatasync"
+    },
+    {
+      "address": "EXTERNAL:00000132",
+      "library": "<EXTERNAL>",
+      "name": "sched_yield"
+    },
+    {
+      "address": "EXTERNAL:00000133",
+      "library": "<EXTERNAL>",
+      "name": "__setitimer_time64"
+    },
+    {
+      "address": "EXTERNAL:00000134",
+      "library": "<EXTERNAL>",
+      "name": "strtod"
+    },
+    {
+      "address": "EXTERNAL:00000135",
+      "library": "<EXTERNAL>",
+      "name": "regcomp"
+    },
+    {
+      "address": "EXTERNAL:00000136",
+      "library": "<EXTERNAL>",
+      "name": "uname"
+    },
+    {
+      "address": "EXTERNAL:00000137",
+      "library": "<EXTERNAL>",
+      "name": "strlen"
+    },
+    {
+      "address": "EXTERNAL:00000138",
+      "library": "<EXTERNAL>",
+      "name": "shutdown"
+    },
+    {
+      "address": "EXTERNAL:00000139",
+      "library": "<EXTERNAL>",
+      "name": "fchmod"
+    },
+    {
+      "address": "EXTERNAL:0000013a",
+      "library": "<EXTERNAL>",
+      "name": "klogctl"
+    },
+    {
+      "address": "EXTERNAL:0000013b",
+      "library": "<EXTERNAL>",
+      "name": "strtol"
+    },
+    {
+      "address": "EXTERNAL:0000013c",
+      "library": "<EXTERNAL>",
+      "name": "__stack_chk_fail"
+    },
+    {
+      "address": "EXTERNAL:0000013d",
+      "library": "<EXTERNAL>",
+      "name": "usleep"
+    },
+    {
+      "address": "EXTERNAL:0000013e",
+      "library": "<EXTERNAL>",
+      "name": "mmap"
+    },
+    {
+      "address": "EXTERNAL:0000013f",
+      "library": "<EXTERNAL>",
+      "name": "getopt_long"
+    },
+    {
+      "address": "EXTERNAL:00000140",
+      "library": "<EXTERNAL>",
+      "name": "mkdtemp"
+    },
+    {
+      "address": "EXTERNAL:00000141",
+      "library": "<EXTERNAL>",
+      "name": "swapoff"
+    },
+    {
+      "address": "EXTERNAL:00000142",
+      "library": "<EXTERNAL>",
+      "name": "setgroups"
+    },
+    {
+      "address": "EXTERNAL:00000143",
+      "library": "<EXTERNAL>",
+      "name": "getaddrinfo"
+    },
+    {
+      "address": "EXTERNAL:00000144",
+      "library": "<EXTERNAL>",
+      "name": "strcasecmp"
+    },
+    {
+      "address": "EXTERNAL:00000145",
+      "library": "<EXTERNAL>",
+      "name": "getuid"
+    },
+    {
+      "address": "EXTERNAL:00000146",
+      "library": "<EXTERNAL>",
+      "name": "strsep"
+    },
+    {
+      "address": "EXTERNAL:00000147",
+      "library": "<EXTERNAL>",
+      "name": "sysinfo"
+    },
+    {
+      "address": "EXTERNAL:00000148",
+      "library": "<EXTERNAL>",
+      "name": "getline"
+    }
+  ],
+  "program": "busybox",
+  "strings": [
+    {
+      "address": "0043b3cc",
+      "string": "bridge/ageing_time"
+    },
+    {
+      "address": "0043b3df",
+      "string": "bridge/forward_delay"
+    },
+    {
+      "address": "0043b3f4",
+      "string": "bridge/hello_time"
+    },
+    {
+      "address": "0043b406",
+      "string": "bridge/max_age"
+    },
+    {
+      "address": "0043b418",
+      "string": "brport/path_cost"
+    },
+    {
+      "address": "0043b429",
+      "string": "brport/priority"
+    },
+    {
+      "address": "0043b450",
+      "string": "^nqNxwp:*S:lI:d46aAbgL"
+    },
+    {
+      "address": "0043b474",
+      "string": "^FIlnrdvt:i:m:p:q:s:w:z:f:46"
+    },
+    {
+      "address": "0043b4a8",
+      "string": "^CV:F:i:np:qRr:s:T:+t:+SA:+O:*ox:*fBbv"
+    },
+    {
+      "address": "0043b4f7",
+      "string": "r--wst:w--rst:s--wrt:t--rsw:l--u:u--l"
+    },
+    {
+      "address": "0043b528",
+      "string": "^o:*t:rwanfvsiO:"
+    },
+    {
+      "address": "0043b558",
+      "string": "^txC:f:OopvkchT:*X:*za"
+    },
+    {
+      "address": "0043b5a4",
+      "string": "^pdRfinlsLHarPvuTt:"
+    },
+    {
+      "address": "0043b5d4",
+      "string": "^b:c:f:d:O:sDn"
+    },
+    {
+      "address": "0043b5f8",
+      "string": "^Rs:ud:r:I::D:"
+    },
+    {
+      "address": "0043b630",
+      "string": "^aHkLsxd:+lcbhm"
+    },
+    {
+      "address": "0043b660",
+      "string": "ignore-environment"
+    },
+    {
+      "address": "0043b708",
+      "string": "^Cadi1lgnsxAkFpRQctuSXrvLHhT:w:"
+    },
+    {
+      "address": "0043b7e9",
+      "string": "pignore-fail-on-non-empty"
+    },
+    {
+      "address": "0043b810",
+      "string": "^fc:n:qs:+vF"
+    },
+    {
+      "address": "0043b824",
+      "string": "^chr:d:t:amf"
+    },
+    {
+      "address": "0043b84c",
+      "string": "^KSbqtma:n:s:u:c:x:p:"
+    },
+    {
+      "address": "0043b8a6",
+      "string": "nno-target-directory"
+    },
+    {
+      "address": "0043b8bc",
+      "string": "Ttarget-directory"
+    },
+    {
+      "address": "0043b918",
+      "string": "^i::rEne:*f:*"
+    },
+    {
+      "address": "0043b984",
+      "string": "^lnqvscFiHhe:*f:*LorRm:+wxA:+B:+C:+EaI"
+    },
+    {
+      "address": "0043b9b4",
+      "string": "no-run-if-empty"
+    },
+    {
+      "address": "0043b9e3",
+      "string": "/dev/misc/rtc"
+    },
+    {
+      "address": "0043b9f4",
+      "string": "^qvAc:+s:t:+w:+W:+I:np:i:46"
+    },
+    {
+      "address": "0043bb44",
+      "string": "X bytes:%llu (%llu.%u %sB)%s"
+    },
+    {
+      "address": "0043bb94",
+      "string": "Usage: %s [-suw] <filename>\n\t-s\tUse shared locking\n\t-u\tUnlock\n\t-w\tWait for the lock to become free, don't acquire lock\n\t-n\tDon't wait for the lock to become free. Fail with exit code\n\n"
+    },
+    {
+      "address": "0043bc50",
+      "string": "Can't open %s\n"
+    },
+    {
+      "address": "0043bc60",
+      "string": "Can't lock %s\n"
+    },
+    {
+      "address": "0043bc80",
+      "string": "usage: %s <ip> \"<message>\"\n"
+    },
+    {
+      "address": "0043bc9c",
+      "string": "Opening socket"
+    },
+    {
+      "address": "0043bcac",
+      "string": "setsockopt()"
+    },
+    {
+      "address": "0043bcc8",
+      "string": "%08X%08X%08X%08X"
+    },
+    {
+      "address": "0043bcdc",
+      "string": "%*d: %32[0-9A-Fa-f]:%X %32[0-9A-Fa-f]:%X %X %lX:%lX %*X:%*X %*X %d %*d %lu "
+    },
+    {
+      "address": "0043bd2c",
+      "string": "%s\tname = %s\n"
+    },
+    {
+      "address": "0043bd3c",
+      "string": "%s\tcanonical name = %s\n"
+    },
+    {
+      "address": "0043bd54",
+      "string": "%s\tnameserver = %s\n"
+    },
+    {
+      "address": "0043bd68",
+      "string": "Non-authoritative answer:\n"
+    },
+    {
+      "address": "0043bd84",
+      "string": "Name:\t%s\nAddress: %s\n"
+    },
+    {
+      "address": "0043bd9c",
+      "string": "MX record too short\n"
+    },
+    {
+      "address": "0043bdb4",
+      "string": "%s\tmail exchanger = %d %s\n"
+    },
+    {
+      "address": "0043bdd0",
+      "string": "%s\ttext = \"%s\"\n"
+    },
+    {
+      "address": "0043bde0",
+      "string": "%s\tservice = %u %u %u %s\n"
+    },
+    {
+      "address": "0043bdfc",
+      "string": "\torigin = %s\n"
+    },
+    {
+      "address": "0043be0c",
+      "string": "\tmail addr = %s\n"
+    },
+    {
+      "address": "0043be20",
+      "string": "\tserial = %lu\n"
+    },
+    {
+      "address": "0043be30",
+      "string": "\trefresh = %lu\n"
+    },
+    {
+      "address": "0043be40",
+      "string": "\tretry = %lu\n"
+    },
+    {
+      "address": "0043be50",
+      "string": "\texpire = %lu\n"
+    },
+    {
+      "address": "0043be60",
+      "string": "\tminimum = %lu\n"
+    },
+    {
+      "address": "0043beb0",
+      "string": "DISCONNECTING"
+    },
+    {
+      "address": "0043bec0",
+      "string": "%*p: %lX %lX %lX %X %X %lu %n"
+    },
+    {
+      "address": "0043bef4",
+      "string": "%-5s %-6lu %-11s %-10s %-13s %6lu "
+    },
+    {
+      "address": "0043bf20",
+      "string": " multi-call binary.\n"
+    },
+    {
+      "address": "0043bf38",
+      "string": "\nNo help available\n"
+    },
+    {
+      "address": "0043bf70",
+      "string": ": applet not found\n"
+    },
+    {
+      "address": "0043bfb0",
+      "string": "\r\nLogin timed out after %u seconds\r\n"
+    },
+    {
+      "address": "0043bfd8",
+      "string": "%.16s/bridge/"
+    },
+    {
+      "address": "0043bff4",
+      "string": "bridge name\tbridge id\t\tSTP enabled\tinterfaces"
+    },
+    {
+      "address": "0043c07c",
+      "string": "can't open '%s'"
+    },
+    {
+      "address": "0043c0a4",
+      "string": "can't move '%s' to '%s'"
+    },
+    {
+      "address": "0043c0bc",
+      "string": "lseek(%llu, %d)"
+    },
+    {
+      "address": "0043c0cc",
+      "string": "can't change directory to '%s'"
+    },
+    {
+      "address": "0043c0ec",
+      "string": "can't change root directory to '%s'"
+    },
+    {
+      "address": "0043c130",
+      "string": "socket(AF_%s,%d,%d)"
+    },
+    {
+      "address": "0043c144",
+      "string": "can't stat '%s'"
+    },
+    {
+      "address": "0043c154",
+      "string": "can't execute '%s'"
+    },
+    {
+      "address": "0043c168",
+      "string": "can't create pipe"
+    },
+    {
+      "address": "0043c17c",
+      "string": "can't duplicate file descriptor"
+    },
+    {
+      "address": "0043c1bc",
+      "string": "close failed"
+    },
+    {
+      "address": "0043c1ec",
+      "string": "settimeofday"
+    },
+    {
+      "address": "0043c21c",
+      "string": "%s: I/O error"
+    },
+    {
+      "address": "0043c234",
+      "string": "%u.%u-%u:%u%c"
+    },
+    {
+      "address": "0043c244",
+      "string": "%u.%u.%u-%u:%u%c"
+    },
+    {
+      "address": "0043c26c",
+      "string": "%u-%u-%u %u%c"
+    },
+    {
+      "address": "0043c29c",
+      "string": "%4u%2u%2u%2u%2u%c"
+    },
+    {
+      "address": "0043c2b0",
+      "string": "user %s: parse error at %s"
+    },
+    {
+      "address": "0043c2cc",
+      "string": "Device not found"
+    },
+    {
+      "address": "0043c2e0",
+      "string": "%s: error fetching interface information: %s"
+    },
+    {
+      "address": "0043c31c",
+      "string": "%s: bogus data on line %d"
+    },
+    {
+      "address": "0043c338",
+      "string": "ignoring file '%s' (no such user)"
+    },
+    {
+      "address": "0043c364",
+      "string": "user %s: too many lines"
+    },
+    {
+      "address": "0043c380",
+      "string": "user:%s entry:%s"
+    },
+    {
+      "address": "0043c3bc",
+      "string": "Cannot read this file"
+    },
+    {
+      "address": "0043c3d4",
+      "string": "No previous file"
+    },
+    {
+      "address": "0043c3e8",
+      "string": "No next file"
+    },
+    {
+      "address": "0043c404",
+      "string": "%-9s Link encap:%s  "
+    },
+    {
+      "address": "0043c43c",
+      "string": "          %s addr:%s "
+    },
+    {
+      "address": "0043c478",
+      "string": "/proc/net/if_inet6"
+    },
+    {
+      "address": "0043c48c",
+      "string": "%s:%s:%s:%s:%s:%s:%s:%s"
+    },
+    {
+      "address": "0043c4a4",
+      "string": "          inet6 addr: %s/%d"
+    },
+    {
+      "address": "0043c4f8",
+      "string": "%4s%4s%4s%4s%4s%4s%4s%4s %08x %02x %02x %02x %20s\n"
+    },
+    {
+      "address": "0043c544",
+      "string": " MTU:%d  Metric:%d"
+    },
+    {
+      "address": "0043c558",
+      "string": "RX packets:%llu errors:%lu dropped:%lu overruns:%lu frame:%lu\n"
+    },
+    {
+      "address": "0043c598",
+      "string": "             compressed:%lu\n"
+    },
+    {
+      "address": "0043c5b8",
+      "string": "TX packets:%llu errors:%lu dropped:%lu overruns:%lu carrier:%lu\n"
+    },
+    {
+      "address": "0043c5fc",
+      "string": "          collisions:%lu "
+    },
+    {
+      "address": "0043c618",
+      "string": "compressed:%lu "
+    },
+    {
+      "address": "0043c628",
+      "string": "txqueuelen:%d "
+    },
+    {
+      "address": "0043c638",
+      "string": "\n          R"
+    },
+    {
+      "address": "0043c64c",
+      "string": "Interrupt:%d "
+    },
+    {
+      "address": "0043c65c",
+      "string": "Base address:0x%lx "
+    },
+    {
+      "address": "0043c670",
+      "string": "Memory:%lx-%lx "
+    },
+    {
+      "address": "0043c680",
+      "string": "DMA chan:%x "
+    },
+    {
+      "address": "0043c690",
+      "string": "/etc/resolv.conf"
+    },
+    {
+      "address": "0043c6c4",
+      "string": "can't get uid for %s"
+    },
+    {
+      "address": "0043c6fc",
+      "string": "child running %s"
+    },
+    {
+      "address": "0043c71c",
+      "string": "can't execute '%s' for user %s"
+    },
+    {
+      "address": "0043c73c",
+      "string": "%02X:%02X:%02X:%02X:%02X:%02X"
+    },
+    {
+      "address": "0043c764",
+      "string": "%s   %6lu %6lu %-*s %-*s %-12s"
+    },
+    {
+      "address": "0043c7b8",
+      "string": "clock_gettime(MONOTONIC) failed"
+    },
+    {
+      "address": "0043c7e0",
+      "string": "write to '%s'"
+    },
+    {
+      "address": "0043c7f8",
+      "string": "Server:\t\t%s\n"
+    },
+    {
+      "address": "0043c808",
+      "string": "Address:\t%s\n\n"
+    },
+    {
+      "address": "0043c818",
+      "string": "Query #%d completed in %ums:\n"
+    },
+    {
+      "address": "0043c838",
+      "string": "** server can't find %s: %s\n"
+    },
+    {
+      "address": "0043c858",
+      "string": "*** Can't find %s: Parse error\n"
+    },
+    {
+      "address": "0043c878",
+      "string": "number %s is not in %llu..%llu range"
+    },
+    {
+      "address": "0043c8a0",
+      "string": "invalid number '%s'"
+    },
+    {
+      "address": "0043c8b4",
+      "string": "%.16s/brport/"
+    },
+    {
+      "address": "0043c8d8",
+      "string": " port id\t\t%.4x"
+    },
+    {
+      "address": "0043c8e8",
+      "string": "\t\t\tstate\t\t%15s\n"
+    },
+    {
+      "address": "0043c8f8",
+      "string": "designated_root"
+    },
+    {
+      "address": "0043c908",
+      "string": " designated root\t%s"
+    },
+    {
+      "address": "0043c928",
+      "string": "\tpath cost\t\t%4u\n"
+    },
+    {
+      "address": "0043c93c",
+      "string": "designated_bridge"
+    },
+    {
+      "address": "0043c950",
+      "string": " designated bridge\t%s"
+    },
+    {
+      "address": "0043c968",
+      "string": "message_age_timer"
+    },
+    {
+      "address": "0043c97c",
+      "string": "\tmessage age timer\t"
+    },
+    {
+      "address": "0043c990",
+      "string": "designated_port"
+    },
+    {
+      "address": "0043c9a0",
+      "string": "\n designated port\t%.4x"
+    },
+    {
+      "address": "0043c9b8",
+      "string": "forward_delay_timer"
+    },
+    {
+      "address": "0043c9cc",
+      "string": "\t\t\tforward delay timer\t"
+    },
+    {
+      "address": "0043c9e4",
+      "string": "designated_cost"
+    },
+    {
+      "address": "0043c9f4",
+      "string": "\n designated cost\t%4u"
+    },
+    {
+      "address": "0043ca18",
+      "string": "\t\t\thold timer\t\t"
+    },
+    {
+      "address": "0043ca34",
+      "string": "config_pending"
+    },
+    {
+      "address": "0043ca44",
+      "string": "CONFIG_PENDING "
+    },
+    {
+      "address": "0043ca60",
+      "string": "TOPOLOGY_CHANGE_ACK "
+    },
+    {
+      "address": "0043ca78",
+      "string": "hairpin_mode"
+    },
+    {
+      "address": "0043ca88",
+      "string": "\n hairpin mode\t\t%4u"
+    },
+    {
+      "address": "0043ca9c",
+      "string": "invalid query type \"%s\""
+    },
+    {
+      "address": "0043cacc",
+      "string": "%u.%u.%u.%u.in-addr.arpa"
+    },
+    {
+      "address": "0043cae8",
+      "string": ";; connection timed out; no servers could be reached\n\n"
+    },
+    {
+      "address": "0043cb20",
+      "string": "*** Can't find %s: No answer\n"
+    },
+    {
+      "address": "0043cb68",
+      "string": "similar to old password"
+    },
+    {
+      "address": "0043cb8c",
+      "string": "too many similar characters"
+    },
+    {
+      "address": "0043cba8",
+      "string": "similar to hostname"
+    },
+    {
+      "address": "0043cbbc",
+      "string": "similar to gecos"
+    },
+    {
+      "address": "0043cbd0",
+      "string": "similar to username"
+    },
+    {
+      "address": "0043cbfc",
+      "string": "%s can't change password for %s"
+    },
+    {
+      "address": "0043cc1c",
+      "string": "no record of %s in %s, using %s"
+    },
+    {
+      "address": "0043cc3c",
+      "string": "can't change locked password for %s"
+    },
+    {
+      "address": "0043cc60",
+      "string": "Changing password for %s\n"
+    },
+    {
+      "address": "0043cc7c",
+      "string": "Old password: "
+    },
+    {
+      "address": "0043cc8c",
+      "string": "incorrect password for %s"
+    },
+    {
+      "address": "0043cca8",
+      "string": "Incorrect password"
+    },
+    {
+      "address": "0043ccbc",
+      "string": "New password: "
+    },
+    {
+      "address": "0043cccc",
+      "string": "Retype password: "
+    },
+    {
+      "address": "0043cce0",
+      "string": "Passwords don't match"
+    },
+    {
+      "address": "0043cd00",
+      "string": "password for %s is unchanged"
+    },
+    {
+      "address": "0043cd20",
+      "string": "password encryption failed"
+    },
+    {
+      "address": "0043cd40",
+      "string": "can't update password file %s"
+    },
+    {
+      "address": "0043cd60",
+      "string": "password for %s changed by %s"
+    },
+    {
+      "address": "0043cd80",
+      "string": "password for %s is already %slocked"
+    },
+    {
+      "address": "0043cda4",
+      "string": "Bad password: %s\n"
+    },
+    {
+      "address": "0043cdb8",
+      "string": "/etc/crontabs"
+    },
+    {
+      "address": "0043cdc8",
+      "string": "crond (busybox 1.35.0) started, log level %d"
+    },
+    {
+      "address": "0043ce00",
+      "string": "/var/run/%s.pid"
+    },
+    {
+      "address": "0043ce10",
+      "string": "wakeup dt=%ld"
+    },
+    {
+      "address": "0043ce20",
+      "string": "time disparity of %ld minutes detected"
+    },
+    {
+      "address": "0043ce6c",
+      "string": "user %s: process already running: %s"
+    },
+    {
+      "address": "0043ce94",
+      "string": "USER %s pid %3d cmd %s"
+    },
+    {
+      "address": "0043cecc",
+      "string": "can't create %s/%s"
+    },
+    {
+      "address": "0043cee0",
+      "string": "can't append to %s/%s"
+    },
+    {
+      "address": "0043cf20",
+      "string": "Command terminated by signal %u\n"
+    },
+    {
+      "address": "0043cf44",
+      "string": "Command exited with non-zero status %u\n"
+    },
+    {
+      "address": "0043cf74",
+      "string": "%uh %um %02us"
+    },
+    {
+      "address": "0043cf84",
+      "string": "%um %u.%02us"
+    },
+    {
+      "address": "0043cfb4",
+      "string": "PID/Program name    "
+    },
+    {
+      "address": "0043cfd4",
+      "string": "can't scan /proc - are you root?"
+    },
+    {
+      "address": "0043cff8",
+      "string": "showing only processes with your user ID"
+    },
+    {
+      "address": "0043d024",
+      "string": "Active Internet connections "
+    },
+    {
+      "address": "0043d044",
+      "string": "(servers and established)"
+    },
+    {
+      "address": "0043d060",
+      "string": "(only servers)"
+    },
+    {
+      "address": "0043d070",
+      "string": "(w/o servers)"
+    },
+    {
+      "address": "0043d080",
+      "string": "Local Address"
+    },
+    {
+      "address": "0043d090",
+      "string": "\nProto Recv-Q Send-Q %-*s %-*s State       %s\n"
+    },
+    {
+      "address": "0043d0c0",
+      "string": "Foreign Address"
+    },
+    {
+      "address": "0043d0d0",
+      "string": "/proc/net/tcp"
+    },
+    {
+      "address": "0043d0e0",
+      "string": "/proc/net/tcp6"
+    },
+    {
+      "address": "0043d0f0",
+      "string": "/proc/net/udp"
+    },
+    {
+      "address": "0043d100",
+      "string": "/proc/net/udp6"
+    },
+    {
+      "address": "0043d110",
+      "string": "/proc/net/raw"
+    },
+    {
+      "address": "0043d120",
+      "string": "/proc/net/raw6"
+    },
+    {
+      "address": "0043d130",
+      "string": "Active UNIX domain sockets "
+    },
+    {
+      "address": "0043d14c",
+      "string": "\nProto RefCnt Flags       Type       State         I-Node %sPath\n"
+    },
+    {
+      "address": "0043d190",
+      "string": "/proc/net/unix"
+    },
+    {
+      "address": "0043d1a4",
+      "string": "LOGIN_TIMEOUT"
+    },
+    {
+      "address": "0043d1bc",
+      "string": "-f is for root only"
+    },
+    {
+      "address": "0043d1d8",
+      "string": " on '%s' from '%s'"
+    },
+    {
+      "address": "0043d210",
+      "string": "Login incorrect"
+    },
+    {
+      "address": "0043d220",
+      "string": "invalid password for '%s'%s"
+    },
+    {
+      "address": "0043d25c",
+      "string": "root login%s"
+    },
+    {
+      "address": "0043d270",
+      "string": "/sys/class/net"
+    },
+    {
+      "address": "0043d280",
+      "string": "bridge %s does not exist"
+    },
+    {
+      "address": "0043d2a8",
+      "string": "%.16s/brforward"
+    },
+    {
+      "address": "0043d2b8",
+      "string": "can't read bridge %s forward db"
+    },
+    {
+      "address": "0043d2d8",
+      "string": "port no\tmac addr\t\tis local?\tageing timer\n"
+    },
+    {
+      "address": "0043d304",
+      "string": "%3u\t%.2x:%.2x:%.2x:%.2x:%.2x:%.2x\t%s\t\t%4u.%.2u\n"
+    },
+    {
+      "address": "0043d334",
+      "string": "%s\n bridge id\t\t%s"
+    },
+    {
+      "address": "0043d350",
+      "string": "\n designated root\t%s"
+    },
+    {
+      "address": "0043d370",
+      "string": "\n root port\t\t%4u\t\t\t"
+    },
+    {
+      "address": "0043d390",
+      "string": "path cost\t\t%4u\n"
+    },
+    {
+      "address": "0043d3b4",
+      "string": "\t\t\tbridge max age\t\t"
+    },
+    {
+      "address": "0043d3d4",
+      "string": "\n hello time\t\t"
+    },
+    {
+      "address": "0043d3e4",
+      "string": "\t\t\tbridge hello time\t"
+    },
+    {
+      "address": "0043d3fc",
+      "string": "forward_delay"
+    },
+    {
+      "address": "0043d40c",
+      "string": "\n forward delay\t\t"
+    },
+    {
+      "address": "0043d420",
+      "string": "\t\t\tbridge forward delay\t"
+    },
+    {
+      "address": "0043d448",
+      "string": "\n ageing time\t\t"
+    },
+    {
+      "address": "0043d464",
+      "string": "\n hello timer\t\t"
+    },
+    {
+      "address": "0043d480",
+      "string": "\t\t\ttcn timer\t\t"
+    },
+    {
+      "address": "0043d490",
+      "string": "topology_change_timer"
+    },
+    {
+      "address": "0043d4a8",
+      "string": "\n topology change timer\t"
+    },
+    {
+      "address": "0043d4d0",
+      "string": "\t\t\tgc timer\t\t"
+    },
+    {
+      "address": "0043d4e0",
+      "string": "topology_change"
+    },
+    {
+      "address": "0043d4f0",
+      "string": "TOPOLOGY_CHANGE "
+    },
+    {
+      "address": "0043d504",
+      "string": "topology_change_detected"
+    },
+    {
+      "address": "0043d520",
+      "string": "TOPOLOGY_CHANGE_DETECTED "
+    },
+    {
+      "address": "0043d540",
+      "string": "bridge/stp_state"
+    },
+    {
+      "address": "0043d560",
+      "string": "bridge/priority"
+    },
+    {
+      "address": "0043d57c",
+      "string": "Error opening log file"
+    },
+    {
+      "address": "0043d5c0",
+      "string": "bad port '%s'"
+    },
+    {
+      "address": "0043d62c",
+      "string": "invalid hw-addr %s"
+    },
+    {
+      "address": "0043d640",
+      "string": "SIOCGIFFLAGS"
+    },
+    {
+      "address": "0043d650",
+      "string": "SIOCSIFFLAGS"
+    },
+    {
+      "address": "0043d660",
+      "string": "SIOCGIFINDEX"
+    },
+    {
+      "address": "0043d670",
+      "string": "%Y-%m-%d %H:%M:%S"
+    },
+    {
+      "address": "0043d684",
+      "string": "current time is %s.%06u"
+    },
+    {
+      "address": "0043d69c",
+      "string": "setting time to %s.%06u (offset %+fs)"
+    },
+    {
+      "address": "0043d6d0",
+      "string": "executing '%s %s'"
+    },
+    {
+      "address": "0043d6f4",
+      "string": "freq_drift_ppm"
+    },
+    {
+      "address": "0043d70c",
+      "string": "poll_interval"
+    },
+    {
+      "address": "0043d72c",
+      "string": "peer %s unfit for selection: root distance %f too high, jitter:%f"
+    },
+    {
+      "address": "0043d770",
+      "string": ", no peer selected"
+    },
+    {
+      "address": "0043d784",
+      "string": "no valid datapoints%s"
+    },
+    {
+      "address": "0043d79c",
+      "string": "falsetickers:%d, candidates:%d%s"
+    },
+    {
+      "address": "0043d7c0",
+      "string": "survivors:%d%s"
+    },
+    {
+      "address": "0043d7d0",
+      "string": "update from %s: same or older datapoint, not using it"
+    },
+    {
+      "address": "0043d81c",
+      "string": "update from:%s offset:%+f delay:%f jitter:%f clock drift:%+.3fppm tc:%d"
+    },
+    {
+      "address": "0043d884",
+      "string": "DARPA Internet"
+    },
+    {
+      "address": "0043d898",
+      "string": "IPv6-in-IPv4"
+    },
+    {
+      "address": "0043d8ac",
+      "string": "Point-to-Point Protocol"
+    },
+    {
+      "address": "0043d8d8",
+      "string": "Local Loopback"
+    },
+    {
+      "address": "0043dfe8",
+      "string": "recv(%s) error"
+    },
+    {
+      "address": "0043dff8",
+      "string": "malformed packet received from %s: size %u"
+    },
+    {
+      "address": "0043e024",
+      "string": "reply from %s: peer is unsynced"
+    },
+    {
+      "address": "0043e044",
+      "string": "reply from %s: delay %f is too high, ignoring"
+    },
+    {
+      "address": "0043e074",
+      "string": "reply from %s: offset:%+f delay:%f status:0x%02x strat:%d refid:0x%08x rootdelay:%f reach:0x%02x"
+    },
+    {
+      "address": "0043e0d8",
+      "string": "want smaller interval: offset/jitter = %u"
+    },
+    {
+      "address": "0043e104",
+      "string": "deficit %d, rta_len=%d!"
+    },
+    {
+      "address": "0043e130",
+      "string": "responded to query from %s"
+    },
+    {
+      "address": "0043e14c",
+      "string": "duplicate peer %s (%s)"
+    },
+    {
+      "address": "0043e16c",
+      "string": "sending query to %s"
+    },
+    {
+      "address": "0043e180",
+      "string": "timed out waiting for %s, reach 0x%02x, next query in %us"
+    },
+    {
+      "address": "0043e1bc",
+      "string": "poll:%us sockets:%u interval:%us"
+    },
+    {
+      "address": "0043e1f4",
+      "string": "\n--- %s ping statistics ---\n%lu packets transmitted, %lu packets received, "
+    },
+    {
+      "address": "0043e240",
+      "string": "%lu duplicates, "
+    },
+    {
+      "address": "0043e254",
+      "string": "%lu%% packet loss\n"
+    },
+    {
+      "address": "0043e268",
+      "string": "round-trip min/avg/max = %u.%03u/%u.%03u/%u.%03u ms\n"
+    },
+    {
+      "address": "0043e2a0",
+      "string": "command line is not complete, try \"help\""
+    },
+    {
+      "address": "0043e2cc",
+      "string": "duplicate \"%s\": \"%s\" is the second value"
+    },
+    {
+      "address": "0043e2f8",
+      "string": "resolving %s"
+    },
+    {
+      "address": "0043e308",
+      "string": "gateway %s is a NETWORK"
+    },
+    {
+      "address": "0043e320",
+      "string": "netmask %.8x and host route conflict"
+    },
+    {
+      "address": "0043e348",
+      "string": "bogus netmask %s"
+    },
+    {
+      "address": "0043e35c",
+      "string": "netmask and route address conflict"
+    },
+    {
+      "address": "0043e398",
+      "string": "/proc/net/psched"
+    },
+    {
+      "address": "0043e3ac",
+      "string": "%*08x%*08x%08x%08x"
+    },
+    {
+      "address": "0043e3c0",
+      "string": "/proc/net/ipv6_route"
+    },
+    {
+      "address": "0043e3f0",
+      "string": "Kernel IPv6 routing table\n%-44s%-40sFlags Metric Ref    Use Iface\n"
+    },
+    {
+      "address": "0043e434",
+      "string": "%32s%x%*s%x%32s%x%x%x%x%s\n"
+    },
+    {
+      "address": "0043e458",
+      "string": "%-43s %-39s %-5s %-6d %-2d %7d %-8s\n"
+    },
+    {
+      "address": "0043e480",
+      "string": "OUT-OF-RANGE"
+    },
+    {
+      "address": "0043e498",
+      "string": "\n%d bytes from %s to %s: icmp type %u (%s) code %u\n"
+    },
+    {
+      "address": "0043e4d4",
+      "string": "IPV6_CHECKSUM"
+    },
+    {
+      "address": "0043e4e4",
+      "string": "setsockopt(%s)"
+    },
+    {
+      "address": "0043e504",
+      "string": "setsockopt(%s,%d)"
+    },
+    {
+      "address": "0043e518",
+      "string": "can't set multicast source interface"
+    },
+    {
+      "address": "0043e54c",
+      "string": "traceroute to %s (%s)"
+    },
+    {
+      "address": "0043e570",
+      "string": ", %d hops max, %d byte packets\n"
+    },
+    {
+      "address": "0043e594",
+      "string": "UNICAST_HOPS"
+    },
+    {
+      "address": "0043e5a4",
+      "string": "setsockopt(%s) %d"
+    },
+    {
+      "address": "0043e5bc",
+      "string": "sent %d octets, ret=%d"
+    },
+    {
+      "address": "0043e5d8",
+      "string": "packet too short (%d bytes) from %s\n"
+    },
+    {
+      "address": "0043e614",
+      "string": " %d bytes to %s"
+    },
+    {
+      "address": "0043e624",
+      "string": "  %u.%03u ms"
+    },
+    {
+      "address": "0043e670",
+      "string": "ERROR truncated"
+    },
+    {
+      "address": "0043e680",
+      "string": "can't send flush request"
+    },
+    {
+      "address": "0043e6a4",
+      "string": "can't talk to rtnetlink"
+    },
+    {
+      "address": "0043e6c4",
+      "string": "EOF on netlink"
+    },
+    {
+      "address": "0043e6d4",
+      "string": "sender address length == %d"
+    },
+    {
+      "address": "0043e6f0",
+      "string": "truncated message"
+    },
+    {
+      "address": "0043e704",
+      "string": "malformed message: len=%d!"
+    },
+    {
+      "address": "0043e720",
+      "string": "RTNETLINK answers"
+    },
+    {
+      "address": "0043e734",
+      "string": "unexpected reply!"
+    },
+    {
+      "address": "0043e748",
+      "string": "message truncated"
+    },
+    {
+      "address": "0043e75c",
+      "string": "remnant of size %d!"
+    },
+    {
+      "address": "0043e7f4",
+      "string": "SIOCGIFTXQLEN"
+    },
+    {
+      "address": "0043e814",
+      "string": "%c    link/%s "
+    },
+    {
+      "address": "0043e834",
+      "string": "can't find device '%s'"
+    },
+    {
+      "address": "0043e84c",
+      "string": "/etc/iproute2/rt_%s"
+    },
+    {
+      "address": "0043e860",
+      "string": "database %s is corrupted at line %d"
+    },
+    {
+      "address": "0043e8e0",
+      "string": "wrong nlmsg len %d"
+    },
+    {
+      "address": "0043e914",
+      "string": "    family %d "
+    },
+    {
+      "address": "0043e924",
+      "string": " peer %s/%d "
+    },
+    {
+      "address": "0043e98c",
+      "string": "noprefixroute "
+    },
+    {
+      "address": "0043e9a8",
+      "string": "valid_lft forever"
+    },
+    {
+      "address": "0043e9bc",
+      "string": "valid_lft %dsec"
+    },
+    {
+      "address": "0043e9cc",
+      "string": " preferred_lft forever"
+    },
+    {
+      "address": "0043e9e4",
+      "string": " preferred_lft %dsec"
+    },
+    {
+      "address": "0043ea08",
+      "string": "not RTM_NEWNEIGH: %08x %08x %08x"
+    },
+    {
+      "address": "0043ea2c",
+      "string": "BUG: wrong nlmsg len %d"
+    },
+    {
+      "address": "0043ea70",
+      "string": " used %d/%d/%d"
+    },
+    {
+      "address": "0043ea8c",
+      "string": "%cINCOMPLETE"
+    },
+    {
+      "address": "0043eae0",
+      "string": "Not a route: %08x %08x %08x\n"
+    },
+    {
+      "address": "0043eb90",
+      "string": "%c    cache "
+    },
+    {
+      "address": "0043eba0",
+      "string": " expires %dsec"
+    },
+    {
+      "address": "0043ec04",
+      "string": "fwmark %#x/%#x "
+    },
+    {
+      "address": "0043ec68",
+      "string": "%d bytes from %s: seq=%u ttl=%d"
+    },
+    {
+      "address": "0043ec88",
+      "string": " time=%u.%03u ms"
+    },
+    {
+      "address": "0043ec9c",
+      "string": "  MSS Window  irtt"
+    },
+    {
+      "address": "0043ecb0",
+      "string": "Metric Ref    Use"
+    },
+    {
+      "address": "0043ecc4",
+      "string": "/proc/net/route"
+    },
+    {
+      "address": "0043ecd4",
+      "string": "Kernel IP routing table\nDestination     Gateway         Genmask         Flags %s Iface\n"
+    },
+    {
+      "address": "0043ed34",
+      "string": "%63s%lx%lx%X%d%d%d%lx%d%d%d\n"
+    },
+    {
+      "address": "0043ed54",
+      "string": "%-15.15s %-15.15s %-16s%-6s"
+    },
+    {
+      "address": "0043ed70",
+      "string": "%5d %-5d %6d %s\n"
+    },
+    {
+      "address": "0043ed84",
+      "string": "%-6d %-2d %7d %s\n"
+    },
+    {
+      "address": "0043edb0",
+      "string": "dump terminated"
+    },
+    {
+      "address": "0043edc4",
+      "string": "\"%s\" is invalid lladdr"
+    },
+    {
+      "address": "0043ede4",
+      "string": "\"%s\" may be inet %s, but it is not allowed in this context"
+    },
+    {
+      "address": "0043ee20",
+      "string": "an %s %s is expected rather than \"%s\""
+    },
+    {
+      "address": "0043ee48",
+      "string": "\"ip neigh flush\""
+    },
+    {
+      "address": "0043ee68",
+      "string": "flush terminated"
+    },
+    {
+      "address": "0043ee7c",
+      "string": "Nothing to flush"
+    },
+    {
+      "address": "0043ee90",
+      "string": "*** Flush is complete after %d round(s) ***\n"
+    },
+    {
+      "address": "0043eec0",
+      "string": "\n*** Round %d, deleting %d entries ***\n"
+    },
+    {
+      "address": "0043eee8",
+      "string": "*** Flush not complete bailing out after %d rounds"
+    },
+    {
+      "address": "0043ef1c",
+      "string": "can't send dump request"
+    },
+    {
+      "address": "0043ef34",
+      "string": "need at least destination address"
+    },
+    {
+      "address": "0043ef58",
+      "string": "not a route?"
+    },
+    {
+      "address": "0043ef68",
+      "string": "wrong len %d"
+    },
+    {
+      "address": "0043ef78",
+      "string": "can't connect the route"
+    },
+    {
+      "address": "0043ef98",
+      "string": "can't flush link addresses"
+    },
+    {
+      "address": "0043efc0",
+      "string": "either \"%s\" is duplicate, or \"%s\" is garbage"
+    },
+    {
+      "address": "0043eff0",
+      "string": "\"ip route flush\""
+    },
+    {
+      "address": "0043f01c",
+      "string": "can't flush routing cache"
+    },
+    {
+      "address": "0043f040",
+      "string": "need \"dev IFACE\""
+    },
+    {
+      "address": "0043f054",
+      "string": "\"dev\" (%s) must match \"label\" (%s)"
+    },
+    {
+      "address": "0043f078",
+      "string": "broadcast can be set only for IPv4 addresses"
+    },
+    {
+      "address": "0043f0a8",
+      "string": "valid_lft is zero\n"
+    },
+    {
+      "address": "0043f0bc",
+      "string": "preferred_lft is greater than valid_lft\n"
+    },
+    {
+      "address": "0043f0fc",
+      "string": "unknown VLAN encapsulation protocol '%s'"
+    },
+    {
+      "address": "0043f128",
+      "string": "argument of \"%s\" must be \"on\" or \"off\""
+    },
+    {
+      "address": "0043f1a8",
+      "string": "wrong address (%s) length: expected %d bytes"
+    },
+    {
+      "address": "0043f1d8",
+      "string": "SIOCSIFHWADDR"
+    },
+    {
+      "address": "0043f1f4",
+      "string": "SIOCSIFTXQLEN"
+    },
+    {
+      "address": "0043f284",
+      "string": "Dest Unreachable"
+    },
+    {
+      "address": "0043f298",
+      "string": "Source Quench"
+    },
+    {
+      "address": "0043f2cc",
+      "string": "Router Advert"
+    },
+    {
+      "address": "0043f2dc",
+      "string": "Router Solicit"
+    },
+    {
+      "address": "0043f2ec",
+      "string": "Time Exceeded"
+    },
+    {
+      "address": "0043f2fc",
+      "string": "Param Problem"
+    },
+    {
+      "address": "0043f318",
+      "string": "Timestamp Reply"
+    },
+    {
+      "address": "0043f328",
+      "string": "Info Request"
+    },
+    {
+      "address": "0043f34c",
+      "string": "Packet Too Big"
+    },
+    {
+      "address": "0043f35c",
+      "string": "Echo Request"
+    },
+    {
+      "address": "0043f36c",
+      "string": "Membership Query"
+    },
+    {
+      "address": "0043f380",
+      "string": "Membership Report"
+    },
+    {
+      "address": "0043f394",
+      "string": "Membership Reduction"
+    },
+    {
+      "address": "0043f3ac",
+      "string": "Neighbor Solicit"
+    },
+    {
+      "address": "0043f3c0",
+      "string": "Neighbor Advert"
+    },
+    {
+      "address": "0043f4e0",
+      "string": "bad packet, malformed option field"
+    },
+    {
+      "address": "0043f504",
+      "string": "SO_BROADCAST"
+    },
+    {
+      "address": "0043f514",
+      "string": "can't send signal"
+    },
+    {
+      "address": "0043f528",
+      "string": "/proc/meminfo"
+    },
+    {
+      "address": "0043f538",
+      "string": "Cached: %lu %*s\n"
+    },
+    {
+      "address": "0043f54c",
+      "string": "MemAvailable: %lu %*s\n"
+    },
+    {
+      "address": "0043f564",
+      "string": "SReclaimable: %lu %*s\n"
+    },
+    {
+      "address": "0043f594",
+      "string": "       %12s%12s%12s%12s%12s%12s\nMem:   "
+    },
+    {
+      "address": "0043f5dc",
+      "string": "%12s%12s%12s"
+    },
+    {
+      "address": "0043f5fc",
+      "string": "-/+ buffers/cache: "
+    },
+    {
+      "address": "0043f624",
+      "string": "unknown signal '%s'"
+    },
+    {
+      "address": "0043f638",
+      "string": "bad signal name '%s'"
+    },
+    {
+      "address": "0043f650",
+      "string": "you need to specify whom to kill"
+    },
+    {
+      "address": "0043f674",
+      "string": "%s: no process killed"
+    },
+    {
+      "address": "0043f68c",
+      "string": "can't kill pid %d"
+    },
+    {
+      "address": "0043f6b8",
+      "string": "  PID USER       VSZ STAT COMMAND"
+    },
+    {
+      "address": "0043f6e8",
+      "string": "%5u %-8.8s %s %s  "
+    },
+    {
+      "address": "0043f704",
+      "string": "error: '%s' must be of the form name=value"
+    },
+    {
+      "address": "0043f730",
+      "string": "error: malformed setting '%s'"
+    },
+    {
+      "address": "0043f750",
+      "string": "error: '%s' is an unknown key"
+    },
+    {
+      "address": "0043f770",
+      "string": "error %sing key '%s'"
+    },
+    {
+      "address": "0043f790",
+      "string": "error reading key '%s'"
+    },
+    {
+      "address": "0043f7b4",
+      "string": "/etc/sysctl.conf"
+    },
+    {
+      "address": "0043f7f4",
+      "string": "can't read '%s'"
+    },
+    {
+      "address": "0043f818",
+      "string": "Mem: %luK used, %luK free, %luK shrd, %luK buff, %luK cached"
+    },
+    {
+      "address": "0043f858",
+      "string": "CPU:%4u%% usr%4u%% sys%4u%% nic%4u%% idle%4u%% io%4u%% irq%4u%% sirq"
+    },
+    {
+      "address": "0043f8a0",
+      "string": "Load average: "
+    },
+    {
+      "address": "0043f8b8",
+      "string": "  PID  PPID USER     STAT   VSZ %VSZ %CPU COMMAND"
+    },
+    {
+      "address": "0043f8ec",
+      "string": "\n%5u%6u %-8.8s %s  %.5s%4u%%%4u%% "
+    },
+    {
+      "address": "0043f918",
+      "string": "no process info in /proc"
+    },
+    {
+      "address": "0043f934",
+      "string": "%04u-%02u-%02u %02u:%02u:%02u\n"
+    },
+    {
+      "address": "0043f954",
+      "string": " %02u:%02u:%02u up "
+    },
+    {
+      "address": "0043f988",
+      "string": ",  load average: %u.%02u, %u.%02u, %u.%02u\n"
+    },
+    {
+      "address": "0043f9b8",
+      "string": "%s%u.%u.%u.%u"
+    },
+    {
+      "address": "0043f9c8",
+      "string": "interface=%s"
+    },
+    {
+      "address": "0043f9fc",
+      "string": "boot_file=%.128s"
+    },
+    {
+      "address": "0043fa28",
+      "string": "bindtodevice"
+    },
+    {
+      "address": "0043fa64",
+      "string": "option 0x%02x did not fit into the packet"
+    },
+    {
+      "address": "0043fa90",
+      "string": "can't add option 0x%02x"
+    },
+    {
+      "address": "0043faa8",
+      "string": "sending renew to server %s"
+    },
+    {
+      "address": "0043fac4",
+      "string": "broadcasting renew"
+    },
+    {
+      "address": "0043fad8",
+      "string": "unicasting a release of %s to %s"
+    },
+    {
+      "address": "0043fb10",
+      "string": "entering released state"
+    },
+    {
+      "address": "0043fb44",
+      "string": "/usr/share/udhcpc/default.script"
+    },
+    {
+      "address": "0043fb68",
+      "string": "udhcp 1.35.0"
+    },
+    {
+      "address": "0043fb8c",
+      "string": "started, v1.35.0"
+    },
+    {
+      "address": "0043fbac",
+      "string": "no lease, forking to background"
+    },
+    {
+      "address": "0043fbcc",
+      "string": "no lease, failing"
+    },
+    {
+      "address": "0043fbe0",
+      "string": "lease lost, entering init state"
+    },
+    {
+      "address": "0043fc14",
+      "string": "packet with bad magic, ignoring"
+    },
+    {
+      "address": "0043fc34",
+      "string": "read error: %m, reopening socket"
+    },
+    {
+      "address": "0043fc58",
+      "string": "no server ID, using 0.0.0.0"
+    },
+    {
+      "address": "0043fc74",
+      "string": "lease of %s obtained from %s, lease time %u%s"
+    },
+    {
+      "address": "0043fcc0",
+      "string": " (core dumped)"
+    },
+    {
+      "address": "0043fd0c",
+      "string": "can't set tty process group: %m"
+    },
+    {
+      "address": "0043fd34",
+      "string": "syntax error: %s"
+    },
+    {
+      "address": "0043fe18",
+      "string": "No current job"
+    },
+    {
+      "address": "0043fe28",
+      "string": "No previous job"
+    },
+    {
+      "address": "0043fe38",
+      "string": "%s: ambiguous"
+    },
+    {
+      "address": "0043fe48",
+      "string": "%s: no such job"
+    },
+    {
+      "address": "0043fe58",
+      "string": "job %s not created under job control"
+    },
+    {
+      "address": "0043fe8c",
+      "string": "Illegal number: %s"
+    },
+    {
+      "address": "0043fea8",
+      "string": "illegal option -%c"
+    },
+    {
+      "address": "0043febc",
+      "string": "no arg for -%c option"
+    },
+    {
+      "address": "0043fed8",
+      "string": "bad substitution"
+    },
+    {
+      "address": "0043feec",
+      "string": "%.*s: is read only"
+    },
+    {
+      "address": "0043ff00",
+      "string": "%.*s: bad variable name"
+    },
+    {
+      "address": "0043ff30",
+      "string": "can't cd to %s: %m"
+    },
+    {
+      "address": "0043ff4c",
+      "string": "%s: %s not found\n"
+    },
+    {
+      "address": "0043ff70",
+      "string": "can't open '%s': %m"
+    },
+    {
+      "address": "0043ff8c",
+      "string": "can't access tty; job control turned off"
+    },
+    {
+      "address": "0043ffb8",
+      "string": "can't fork: %m"
+    },
+    {
+      "address": "0043ffd8",
+      "string": "You have stopped jobs.\n"
+    },
+    {
+      "address": "00440000",
+      "string": " is a shell keyword"
+    },
+    {
+      "address": "00440028",
+      "string": " is an alias for %s"
+    },
+    {
+      "address": "0044003c",
+      "string": " is a function"
+    },
+    {
+      "address": "0044004c",
+      "string": " is a %sshell builtin"
+    },
+    {
+      "address": "00440064",
+      "string": ": not found\n"
+    },
+    {
+      "address": "00440084",
+      "string": "bad fd number"
+    },
+    {
+      "address": "00440094",
+      "string": "can't create pipe: %m"
+    },
+    {
+      "address": "004400b8",
+      "string": "parameter not set"
+    },
+    {
+      "address": "004400ec",
+      "string": "no such file"
+    },
+    {
+      "address": "004400fc",
+      "string": "can't open %s: %s"
+    },
+    {
+      "address": "00440110",
+      "string": "nonexistent directory"
+    },
+    {
+      "address": "00440128",
+      "string": "can't create %s: %s"
+    },
+    {
+      "address": "0044013c",
+      "string": "built-in shell (ash)"
+    },
+    {
+      "address": "004403b8",
+      "string": "not in a function"
+    },
+    {
+      "address": "00440404",
+      "string": "illegal option %co %s"
+    },
+    {
+      "address": "00440434",
+      "string": "illegal option %c%c"
+    },
+    {
+      "address": "0044046c",
+      "string": "usage: getopts optstring var [arg]"
+    },
+    {
+      "address": "004404a0",
+      "string": "Illegal option -%c\n"
+    },
+    {
+      "address": "004404b4",
+      "string": "No arg for -%c option\n"
+    },
+    {
+      "address": "004404dc",
+      "string": "unexpected %s"
+    },
+    {
+      "address": "004404ec",
+      "string": " (expecting %s)"
+    },
+    {
+      "address": "004404fc",
+      "string": "missing '))'"
+    },
+    {
+      "address": "0044050c",
+      "string": "unterminated quoted string"
+    },
+    {
+      "address": "00440534",
+      "string": "EOF in backquote substitution"
+    },
+    {
+      "address": "00440554",
+      "string": "bad for loop variable"
+    },
+    {
+      "address": "00440570",
+      "string": "bad function name"
+    },
+    {
+      "address": "00440584",
+      "string": "\nUse \"exit\" to leave shell.\n"
+    },
+    {
+      "address": "004405a4",
+      "string": "%s: not found"
+    },
+    {
+      "address": "004405b8",
+      "string": "trap -- %s %s\n"
+    },
+    {
+      "address": "004405c8",
+      "string": "%s: invalid signal specification"
+    },
+    {
+      "address": "004405fc",
+      "string": "expression expected"
+    },
+    {
+      "address": "00440610",
+      "string": "invalid count"
+    },
+    {
+      "address": "00440620",
+      "string": "invalid file descriptor"
+    },
+    {
+      "address": "00440638",
+      "string": "invalid timeout"
+    },
+    {
+      "address": "00440648",
+      "string": "p:u:rt:n:sd:"
+    },
+    {
+      "address": "0044065c",
+      "string": "read: '%s': bad variable name"
+    },
+    {
+      "address": "0044068c",
+      "string": "illegal mode: %s"
+    },
+    {
+      "address": "004406c0",
+      "string": "error setting limit"
+    },
+    {
+      "address": "00440710",
+      "string": "unknown %s name: %s"
+    }
+  ],
+  "suspicious_xrefs": [
+    {
+      "name": "system",
+      "thunk_count": 2,
+      "xrefs": [
+        {
+          "caller": "FUN_00406f60",
+          "from": "00407738",
+          "thunk": "0044d750"
+        },
+        {
+          "caller": "FUN_00431324",
+          "from": "004316c2",
+          "thunk": "0044d750"
+        },
+        {
+          "caller": null,
+          "from": "0045ec30",
+          "thunk": "0046014c"
+        },
+        {
+          "caller": "system",
+          "from": "0044d756",
+          "thunk": "0046014c"
+        }
+      ],
+      "xrefs_total": 4
+    },
+    {
+      "name": "popen",
+      "thunk_count": 2,
+      "xrefs": [
+        {
+          "caller": "FUN_00406f60",
+          "from": "004071f8",
+          "thunk": "0044db50"
+        },
+        {
+          "caller": "FUN_00406f60",
+          "from": "00407598",
+          "thunk": "0044db50"
+        },
+        {
+          "caller": null,
+          "from": "0045ed34",
+          "thunk": "00460240"
+        },
+        {
+          "caller": "popen",
+          "from": "0044db56",
+          "thunk": "00460240"
+        }
+      ],
+      "xrefs_total": 4
+    },
+    {
+      "name": "execve",
+      "thunk_count": 2,
+      "xrefs": [
+        {
+          "caller": "FUN_00416d50",
+          "from": "00416d60",
+          "thunk": "0044d240"
+        },
+        {
+          "caller": null,
+          "from": "0045eaec",
+          "thunk": "0046000c"
+        },
+        {
+          "caller": "execve",
+          "from": "0044d246",
+          "thunk": "0046000c"
+        }
+      ],
+      "xrefs_total": 3
+    },
+    {
+      "name": "execvp",
+      "thunk_count": 2,
+      "xrefs": [
+        {
+          "caller": "FUN_004086e8",
+          "from": "004086f8",
+          "thunk": "0044d270"
+        },
+        {
+          "caller": "FUN_004086e8",
+          "from": "00408700",
+          "thunk": "0044d270"
+        },
+        {
+          "caller": null,
+          "from": "00426e48",
+          "thunk": "0044d270"
+        },
+        {
+          "caller": null,
+          "from": "0042cf4c",
+          "thunk": "0044d270"
+        },
+        {
+          "caller": null,
+          "from": "0045eaf8",
+          "thunk": "00460018"
+        },
+        {
+          "caller": "execvp",
+          "from": "0044d276",
+          "thunk": "00460018"
+        }
+      ],
+      "xrefs_total": 6
+    },
+    {
+      "name": "execl",
+      "thunk_count": 2,
+      "xrefs": [
+        {
+          "caller": "FUN_0040c064",
+          "from": "0040c0f4",
+          "thunk": "0044dea0"
+        },
+        {
+          "caller": null,
+          "from": "0045ee0c",
+          "thunk": "00460318"
+        },
+        {
+          "caller": "execl",
+          "from": "0044dea6",
+          "thunk": "00460318"
+        }
+      ],
+      "xrefs_total": 3
+    },
+    {
+      "name": "execlp",
+      "thunk_count": 2,
+      "xrefs": [
+        {
+          "caller": "FUN_0040a78c",
+          "from": "0040a7ea",
+          "thunk": "0044dd30"
+        },
+        {
+          "caller": "FUN_0040a78c",
+          "from": "0040a7fe",
+          "thunk": "0044dd30"
+        },
+        {
+          "caller": "FUN_00424950",
+          "from": "004249a4",
+          "thunk": "0044dd30"
+        },
+        {
+          "caller": null,
+          "from": "0045edb0",
+          "thunk": "004602bc"
+        },
+        {
+          "caller": "execlp",
+          "from": "0044dd36",
+          "thunk": "004602bc"
+        }
+      ],
+      "xrefs_total": 5
+    },
+    {
+      "name": "strcpy",
+      "thunk_count": 2,
+      "xrefs": [
+        {
+          "caller": "FUN_0040a140",
+          "from": "0040a238",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_0040a140",
+          "from": "0040a276",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_0040a140",
+          "from": "0040a28c",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": null,
+          "from": "00409244",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": null,
+          "from": "0040eccc",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_00410e28",
+          "from": "00410ee0",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_00418d24",
+          "from": "00418f22",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_00419ebc",
+          "from": "00419f68",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_0041b084",
+          "from": "0041b0da",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_00418640",
+          "from": "004186e4",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_0041552c",
+          "from": "0041554c",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": null,
+          "from": "00426046",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_00424cb4",
+          "from": "00424ccc",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_00424d10",
+          "from": "00424d40",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": null,
+          "from": "00433546",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": null,
+          "from": "004044c6",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": null,
+          "from": "004044ea",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": null,
+          "from": "0040450a",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": null,
+          "from": "00404528",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": null,
+          "from": "00404546",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": null,
+          "from": "0040456c",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": null,
+          "from": "00404592",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": null,
+          "from": "004045b8",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": null,
+          "from": "004045d6",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": null,
+          "from": "004045f4",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": null,
+          "from": "00404612",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": null,
+          "from": "00404630",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": null,
+          "from": "00404658",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": null,
+          "from": "00404680",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_00409ce0",
+          "from": "00409d08",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_00409ce0",
+          "from": "00409d3a",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_00409ce0",
+          "from": "00409d62",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_0040c94c",
+          "from": "0040c972",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_0040c94c",
+          "from": "0040c9a4",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_0040c94c",
+          "from": "0040c9c2",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_0040c94c",
+          "from": "0040ca02",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_0040c94c",
+          "from": "0040ca22",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_0040c94c",
+          "from": "0040ca40",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_0040c94c",
+          "from": "0040ca60",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_0040c94c",
+          "from": "0040ca7e",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_0040c94c",
+          "from": "0040ca9c",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_0040c94c",
+          "from": "0040caba",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_0040c94c",
+          "from": "0040cad8",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_0040c94c",
+          "from": "0040cb00",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_0040c94c",
+          "from": "0040cb28",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_0040c94c",
+          "from": "0040cb50",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_0040cf34",
+          "from": "0040cf98",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_0042c0dc",
+          "from": "0042c158",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": "FUN_0042d274",
+          "from": "0042d294",
+          "thunk": "0044d790"
+        },
+        {
+          "caller": null,
+          "from": "00421d14",
+          "thunk": "0044d790"
+        }
+      ],
+      "xrefs_total": 79
+    },
+    {
+      "name": "strcat",
+      "thunk_count": 2,
+      "xrefs": [
+        {
+          "caller": null,
+          "from": "0040926a",
+          "thunk": "0044d6d0"
+        },
+        {
+          "caller": null,
+          "from": "00409292",
+          "thunk": "0044d6d0"
+        },
+        {
+          "caller": null,
+          "from": "004092ba",
+          "thunk": "0044d6d0"
+        },
+        {
+          "caller": null,
+          "from": "004092da",
+          "thunk": "0044d6d0"
+        },
+        {
+          "caller": "FUN_0043a294",
+          "from": "0043a40a",
+          "thunk": "0044d6d0"
+        },
+        {
+          "caller": "FUN_0043103c",
+          "from": "00431078",
+          "thunk": "0044d6d0"
+        },
+        {
+          "caller": "FUN_0042f6b0",
+          "from": "0042fd3e",
+          "thunk": "0044d6d0"
+        },
+        {
+          "caller": "FUN_0042f6b0",
+          "from": "0042fd60",
+          "thunk": "0044d6d0"
+        },
+        {
+          "caller": "FUN_0042f6b0",
+          "from": "0042fdbe",
+          "thunk": "0044d6d0"
+        },
+        {
+          "caller": null,
+          "from": "0045ec10",
+          "thunk": "0046012c"
+        },
+        {
+          "caller": "strcat",
+          "from": "0044d6d6",
+          "thunk": "0046012c"
+        }
+      ],
+      "xrefs_total": 11
+    },
+    {
+      "name": "sprintf",
+      "thunk_count": 2,
+      "xrefs": [
+        {
+          "caller": "FUN_00411704",
+          "from": "004119e4",
+          "thunk": "0044e450"
+        },
+        {
+          "caller": "FUN_00411704",
+          "from": "00411a44",
+          "thunk": "0044e450"
+        },
+        {
+          "caller": "FUN_0041df08",
+          "from": "0041df40",
+          "thunk": "0044e450"
+        },
+        {
+          "caller": "FUN_0041dee0",
+          "from": "0041def2",
+          "thunk": "0044e450"
+        },
+        {
+          "caller": "FUN_00424cb4",
+          "from": "00424cf0",
+          "thunk": "0044e450"
+        },
+        {
+          "caller": null,
+          "from": "00427652",
+          "thunk": "0044e450"
+        },
+        {
+          "caller": "FUN_0042e6c0",
+          "from": "0042e802",
+          "thunk": "0044e450"
+        },
+        {
+          "caller": "FUN_00416e74",
+          "from": "004170a8",
+          "thunk": "0044e450"
+        },
+        {
+          "caller": "FUN_00416e50",
+          "from": "00416e64",
+          "thunk": "0044e450"
+        },
+        {
+          "caller": "FUN_00439744",
+          "from": "0043978c",
+          "thunk": "0044e450"
+        },
+        {
+          "caller": "FUN_00439744",
+          "from": "00439842",
+          "thunk": "0044e450"
+        },
+        {
+          "caller": "FUN_00439744",
+          "from": "00439904",
+          "thunk": "0044e450"
+        },
+        {
+          "caller": "FUN_00439744",
+          "from": "00439950",
+          "thunk": "0044e450"
+        },
+        {
+          "caller": "FUN_00439744",
+          "from": "0043995c",
+          "thunk": "0044e450"
+        },
+        {
+          "caller": "FUN_00439744",
+          "from": "0043998c",
+          "thunk": "0044e450"
+        },
+        {
+          "caller": null,
+          "from": "004204c0",
+          "thunk": "0044e450"
+        },
+        {
+          "caller": null,
+          "from": "004196e4",
+          "thunk": "0044e450"
+        },
+        {
+          "caller": null,
+          "from": "0045ef7c",
+          "thunk": "00460478"
+        },
+        {
+          "caller": "sprintf",
+          "from": "0044e456",
+          "thunk": "00460478"
+        }
+      ],
+      "xrefs_total": 19
+    },
+    {
+      "name": "memcpy",
+      "thunk_count": 2,
+      "xrefs": [
+        {
+          "caller": null,
+          "from": "00411b7a",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": null,
+          "from": "00411bda",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": null,
+          "from": "00410f30",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_00410e28",
+          "from": "00410ecc",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_00411704",
+          "from": "004117ca",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_00411704",
+          "from": "0041184e",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_00436dd4",
+          "from": "00436ea8",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_00411dac",
+          "from": "00411f06",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_00411dac",
+          "from": "00411f42",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_00411dac",
+          "from": "0041202c",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_00419df0",
+          "from": "00419e78",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_00418ccc",
+          "from": "00418cf6",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_0041cb10",
+          "from": "0041cb7e",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_0041cf1c",
+          "from": "0041cf84",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_0041d0cc",
+          "from": "0041d1ca",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_0041e130",
+          "from": "0041eb34",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_0041e130",
+          "from": "0041ec2e",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_00418bfc",
+          "from": "00418c96",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_0040afac",
+          "from": "0040afd2",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_0041c8b8",
+          "from": "0041c916",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_0041c9ec",
+          "from": "0041ca16",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_0041c9ec",
+          "from": "0041ca70",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_0041cbc0",
+          "from": "0041cc46",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_004247f8",
+          "from": "0042483c",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_004240b0",
+          "from": "004240ea",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": null,
+          "from": "00425db2",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_00425a60",
+          "from": "00425c20",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_004253d8",
+          "from": "004255a4",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": null,
+          "from": "00434842",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": null,
+          "from": "00434e9a",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": null,
+          "from": "004346ca",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": null,
+          "from": "004346d4",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_0043051c",
+          "from": "00430852",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_004301c0",
+          "from": "004301e6",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_004098e0",
+          "from": "0040991c",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_004098e0",
+          "from": "004099a0",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_004098e0",
+          "from": "004099fc",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_0041311c",
+          "from": "004133e6",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_00413870",
+          "from": "00413b90",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_00413870",
+          "from": "00413bde",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_00410c48",
+          "from": "00410d7a",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_00410c48",
+          "from": "00410daa",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_00439b58",
+          "from": "00439b94",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_00412a74",
+          "from": "00412aba",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_004134b4",
+          "from": "004136ca",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_004114a0",
+          "from": "004114d4",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_00439460",
+          "from": "004394a0",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_00439cac",
+          "from": "00439fa0",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_00439cac",
+          "from": "00439fcc",
+          "thunk": "0044e4c0"
+        },
+        {
+          "caller": "FUN_00439cac",
+          "from": "0043a050",
+          "thunk": "0044e4c0"
+        }
+      ],
+      "xrefs_total": 112
+    },
+    {
+      "name": "setuid",
+      "thunk_count": 2,
+      "xrefs": [
+        {
+          "caller": "FUN_0040a6ac",
+          "from": "0040a6ae",
+          "thunk": "0044d290"
+        },
+        {
+          "caller": null,
+          "from": "0045eb00",
+          "thunk": "00460020"
+        },
+        {
+          "caller": "setuid",
+          "from": "0044d296",
+          "thunk": "00460020"
+        }
+      ],
+      "xrefs_total": 3
+    },
+    {
+      "name": "setgid",
+      "thunk_count": 2,
+      "xrefs": [
+        {
+          "caller": "FUN_0040a690",
+          "from": "0040a692",
+          "thunk": "0044d5e0"
+        },
+        {
+          "caller": null,
+          "from": "0045ebd4",
+          "thunk": "004600f0"
+        },
+        {
+          "caller": "setgid",
+          "from": "0044d5e6",
+          "thunk": "004600f0"
+        }
+      ],
+      "xrefs_total": 3
+    },
+    {
+      "name": "seteuid",
+      "thunk_count": 2,
+      "xrefs": [
+        {
+          "caller": null,
+          "from": "0040d70e",
+          "thunk": "0044df20"
+        },
+        {
+          "caller": null,
+          "from": "0040d724",
+          "thunk": "0044df20"
+        },
+        {
+          "caller": null,
+          "from": "0045ee30",
+          "thunk": "00460338"
+        },
+        {
+          "caller": "seteuid",
+          "from": "0044df26",
+          "thunk": "00460338"
+        }
+      ],
+      "xrefs_total": 4
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "private_key_header": [],
+  "password_assignment": [
+    {
+      "path": "usr/lib/lua/luci/dispatcher.lua",
+      "line": 556,
+      "match": "\t\tpassword = pass,"
+    }
+  ],
+  "hardcoded_telnet": [],
+  "openssl_invocation": [
+    {
+      "path": "lib/functions/system.sh",
+      "line": 103,
+      "match": "openssl aes"
+    }
+  ],
+  "hardcoded_url_http": [
+    {
+      "path": "www/index.html",
+      "line": 2,
+      "match": "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"
+    },
+    {
+      "path": "www/index.html",
+      "line": 3,
+      "match": "http://www.w3.org/1999/xhtml"
+    },
+    {
+      "path": "www/luci-static/resources/view/status/bandwidth.js",
+      "line": 6,
+      "match": "http://www.w3.org/2000/svg"
+    },
+    {
+      "path": "www/luci-static/resources/view/status/bandwidth.js",
+      "line": 6,
+      "match": "http://www.w3.org/2000/svg"
+    },
+    {
+      "path": "www/luci-static/resources/view/status/channel_analysis.js",
+      "line": 9,
+      "match": "http://www.w3.org/2000/svg"
+    },
+    {
+      "path": "www/luci-static/resources/view/status/channel_analysis.js",
+      "line": 9,
+      "match": "http://www.w3.org/2000/svg"
+    },
+    {
+      "path": "www/luci-static/resources/view/status/channel_analysis.js",
+      "line": 9,
+      "match": "http://www.w3.org/2000/svg"
+    },
+    {
+      "path": "www/luci-static/resources/view/status/channel_analysis.js",
+      "line": 12,
+      "match": "http://www.w3.org/2000/svg"
+    },
+    {
+      "path": "www/luci-static/resources/view/status/channel_analysis.js",
+      "line": 13,
+      "match": "http://www.w3.org/2000/svg"
+    },
+    {
+      "path": "www/luci-static/resources/view/status/connections.js",
+      "line": 5,
+      "match": "http://www.w3.org/2000/svg"
+    },
+    {
+      "path": "www/luci-static/resources/view/status/connections.js",
+      "line": 5,
+      "match": "http://www.w3.org/2000/svg"
+    },
+    {
+      "path": "www/luci-static/resources/view/status/wireless.js",
+      "line": 6,
+      "match": "http://www.w3.org/2000/svg"
+    },
+    {
+      "path": "www/luci-static/resources/view/status/wireless.js",
+      "line": 6,
+      "match": "http://www.w3.org/2000/svg"
+    },
+    {
+      "path": "www/luci-static/resources/view/status/load.js",
+      "line": 5,
+      "match": "http://www.w3.org/2000/svg"
+    },
+    {
+      "path": "www/luci-static/resources/view/status/load.js",
+      "line": 5,
+      "match": "http://www.w3.org/2000/svg"
+    },
+    {
+      "path": "usr/lib/lua/luci/util.lua",
+      "line": 489,
+      "match": "http://lua-users.org/lists/lua-l/2008-02/msg01158.html)"
+    },
+    {
+      "path": "usr/lib/lua/luci/ltn12.lua",
+      "line": 42,
+      "match": "http://lua-users.org/wiki/FiltersSourcesAndSinks"
+    },
+    {
+      "path": "usr/lib/lua/nixio/fs.lua",
+      "line": 10,
+      "match": "http://www.apache.org/licenses/LICENSE-2.0"
+    },
+    {
+      "path": "usr/lib/lua/nixio/util.lua",
+      "line": 10,
+      "match": "http://www.apache.org/licenses/LICENSE-2.0"
+    },
+    {
+      "path": "etc/opkg/customfeeds.conf",
+      "line": 3,
+      "match": "http://www.example.com/path/to/files"
+    }
+  ],
+  "default_admin_login": [],
+  "root_passwd_blank": [
+    {
+      "path": "etc/shadow",
+      "line": 1,
+      "match": "root::"
+    }
+  ],
+  "api_token_like": []
+}

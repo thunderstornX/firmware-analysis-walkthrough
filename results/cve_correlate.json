@@ -1,0 +1,160 @@
+{
+  "firmware": "openwrt-22.03.7-ath79-archer-c7-v2",
+  "packages": [
+    {
+      "name": "busybox",
+      "version": "1.35.0-5",
+      "normalised_version": "1.35.0",
+      "section": null,
+      "cves": [
+        {
+          "id": "CVE-2022-28391",
+          "severity": "high",
+          "summary": "BusyBox through 1.35.0 allows remote attackers to execute arbitrary code if netstat is used to print a DNS PTR record's value to a VT compatible terminal. Alternatively, the attacker could choose to change the terminal's colors.",
+          "published": "2022-04-03T21:15:08.207"
+        },
+        {
+          "id": "CVE-2022-30065",
+          "severity": "high",
+          "summary": "A use-after-free in Busybox 1.35-x's awk applet leads to denial of service and possibly code execution when processing a crafted awk pattern in the copyvar function.",
+          "published": "2022-05-18T15:15:10.240"
+        },
+        {
+          "id": "CVE-2022-48174",
+          "severity": "critical",
+          "summary": "There is a stack overflow vulnerability in ash.c:6030 in busybox before 1.35. In the environment of Internet of Vehicles, this vulnerability can be executed from command to arbitrary code execution.",
+          "published": "2023-08-22T19:16:31.080"
+        },
+        {
+          "id": "CVE-2025-46394",
+          "severity": "low",
+          "summary": "In tar in BusyBox through 1.37.0, a TAR archive can have filenames hidden from a listing through the use of terminal escape sequences.",
+          "published": "2025-04-23T16:15:48.713"
+        },
+        {
+          "id": "CVE-2025-60876",
+          "severity": "medium",
+          "summary": "BusyBox wget thru 1.3.7 accepted raw CR (0x0D)/LF (0x0A) and other C0 control bytes in the HTTP request-target (path/query), allowing the request line to be split and attacker-controlled headers to be injected. To preserve the HTTP/1.1 request-line shape METHOD SP request-target SP HTTP/1.1, a raw space (0x20) in the request-target must also be rejected (clients should use %20).",
+          "published": "2025-11-10T20:15:48.683"
+        }
+      ]
+    },
+    {
+      "name": "wpad-basic-wolfssl",
+      "version": "2022-01-16-cff80b4f-21.3",
+      "normalised_version": "2022-01-16-cff80b4f-21.3",
+      "section": null,
+      "cves": []
+    },
+    {
+      "name": "dnsmasq",
+      "version": "2.86-16",
+      "normalised_version": "2.86",
+      "section": null,
+      "cves": [
+        {
+          "id": "CVE-2021-45951",
+          "severity": "critical",
+          "summary": "Dnsmasq 2.86 has a heap-based buffer overflow in check_bad_address (called from check_for_bogus_wildcard and FuzzCheckForBogusWildcard). NOTE: the vendor's position is that CVE-2021-45951 through CVE-2021-45957 \"do not represent real vulnerabilities, to the best of our knowledge.",
+          "published": "2022-01-01T00:15:08.507"
+        },
+        {
+          "id": "CVE-2021-45952",
+          "severity": "critical",
+          "summary": "Dnsmasq 2.86 has a heap-based buffer overflow in dhcp_reply (called from dhcp_packet and FuzzDhcp). NOTE: the vendor's position is that CVE-2021-45951 through CVE-2021-45957 \"do not represent real vulnerabilities, to the best of our knowledge.",
+          "published": "2022-01-01T00:15:08.553"
+        },
+        {
+          "id": "CVE-2021-45953",
+          "severity": "critical",
+          "summary": "Dnsmasq 2.86 has a heap-based buffer overflow in extract_name (called from hash_questions and fuzz_util.c). NOTE: the vendor's position is that CVE-2021-45951 through CVE-2021-45957 \"do not represent real vulnerabilities, to the best of our knowledge.",
+          "published": "2022-01-01T00:15:08.593"
+        },
+        {
+          "id": "CVE-2021-45954",
+          "severity": "critical",
+          "summary": "Dnsmasq 2.86 has a heap-based buffer overflow in extract_name (called from answer_auth and FuzzAuth). NOTE: the vendor's position is that CVE-2021-45951 through CVE-2021-45957 \"do not represent real vulnerabilities, to the best of our knowledge.",
+          "published": "2022-01-01T00:15:08.637"
+        },
+        {
+          "id": "CVE-2021-45955",
+          "severity": "critical",
+          "summary": "Dnsmasq 2.86 has a heap-based buffer overflow in resize_packet (called from FuzzResizePacket and fuzz_rfc1035.c) because of the lack of a proper bounds check upon pseudo header re-insertion. NOTE: the vendor's position is that CVE-2021-45951 through CVE-2021-45957 \"do not represent real vulnerabilities, to the best of our knowledge.\" However, a contributor states that a security patch (mentioned in 016162.html) is needed",
+          "published": "2022-01-01T00:15:08.677"
+        },
+        {
+          "id": "CVE-2021-45956",
+          "severity": "critical",
+          "summary": "Dnsmasq 2.86 has a heap-based buffer overflow in print_mac (called from log_packet and dhcp_reply). NOTE: the vendor's position is that CVE-2021-45951 through CVE-2021-45957 \"do not represent real vulnerabilities, to the best of our knowledge.",
+          "published": "2022-01-01T00:15:08.720"
+        },
+        {
+          "id": "CVE-2021-45957",
+          "severity": "critical",
+          "summary": "Dnsmasq 2.86 has a heap-based buffer overflow in answer_request (called from FuzzAnswerTheRequest and fuzz_rfc1035.c). NOTE: the vendor's position is that CVE-2021-45951 through CVE-2021-45957 \"do not represent real vulnerabilities, to the best of our knowledge.",
+          "published": "2022-01-01T00:15:08.767"
+        },
+        {
+          "id": "CVE-2022-0934",
+          "severity": "high",
+          "summary": "A single-byte, non-arbitrary write/use-after-free flaw was found in dnsmasq. This flaw allows an attacker who sends a crafted packet processed by dnsmasq, potentially causing a denial of service.",
+          "published": "2022-08-29T15:15:10.087"
+        },
+        {
+          "id": "CVE-2023-28450",
+          "severity": "high",
+          "summary": "An issue was discovered in Dnsmasq before 2.90. The default maximum EDNS.0 UDP packet size was set to 4096 but should be 1232 because of DNS Flag Day 2020.",
+          "published": "2023-03-15T21:15:09.333"
+        },
+        {
+          "id": "CVE-2023-50387",
+          "severity": "high",
+          "summary": "Certain DNSSEC aspects of the DNS protocol (in RFC 4033, 4034, 4035, 6840, and related RFCs) allow remote attackers to cause a denial of service (CPU consumption) via one or more DNSSEC responses, aka the \"KeyTrap\" issue. One of the concerns is that, when there is a zone with many DNSKEY and RRSIG records, the protocol specification implies that an algorithm must evaluate all combinations of DNSKEY and RRSIG records.",
+          "published": "2024-02-14T16:15:45.300"
+        }
+      ]
+    },
+    {
+      "name": "dropbear",
+      "version": "2022.82-4",
+      "normalised_version": "2022.82",
+      "section": null,
+      "cves": [
+        {
+          "id": "CVE-2023-48795",
+          "severity": "medium",
+          "summary": "The SSH transport protocol with certain OpenSSH extensions, found in OpenSSH before 9.6 and other products, allows remote attackers to bypass integrity checks such that some packets are omitted (from the extension negotiation message), and a client and server may consequently end up with a connection for which some security features have been downgraded or disabled, aka a Terrapin attack. This occurs because the SSH Binary Packet Protocol (BPP), implemented by these extensions, mishandles the handshake phase and mishandles use of sequence numbers. For example, there is an effective attack against SSH's use of ChaCha20-Poly1305 (and CBC with Encrypt-then-MAC). The bypass occurs in chacha20-poly1305@openssh.com and (if CBC is used) the -etm@openssh.com MAC algorithms. This also affects Maverick Synergy Java SSH API before 3.1.0-SNAPSHOT, Dropbear through 2022.83, Ssh before 5.1.1 in Erlang/OTP, PuTTY before 0.80, AsyncSSH before 2.14.2, golang.org/x/crypto before 0.17.0, libssh before 0.10.6, libssh2 through 1.11.0, Thorn Tech SFTP Gateway before 3.4.6, Tera Term before 5.1, Paramiko before 3.4.0, jsch before 0.2.15, SFTPGo before 2.5.6, Netgate pfSense Plus through 23.09.1, Netgate pfSense CE through 2.7.2, HPN-SSH through 18.2.0, ProFTPD before 1.3.8b (and before 1.3.9rc2), ORYX CycloneSSH before 2.3.4, NetSarang XShell 7 before Build 0144, CrushFTP before 10.6.0, ConnectBot SSH library before 2.2.22, Apache MINA sshd through 2.11.0, sshj through 0.37.0, TinySSH through 20230101, trilead-ssh2 6401, LANCOM LCOS and LANconfig, FileZilla before 3.66.4, Nova before 11.8, PKIX-SSH before 14.4, SecureCRT before 9.4.3, Transmit5 before 5.10.4, Win32-OpenSSH before 9.5.0.0p1-Beta, WinSCP before 6.2.2, Bitvise SSH Server before 9.32, Bitvise SSH Client before 9.33, KiTTY through 0.76.1.13, the net-ssh gem 7.2.0 for Ruby, the mscdex ssh2 module before 1.15.0 for Node.js, the thrussh library before 0.35.1 for Rust, and the Russh crate before 0.40.2 for Rust.",
+          "published": "2023-12-18T16:15:10.897"
+        }
+      ]
+    },
+    {
+      "name": "ppp",
+      "version": "2.4.9.git-2021-01-04-3",
+      "normalised_version": "2.4.9.git-2021-01-04",
+      "section": null,
+      "cves": []
+    },
+    {
+      "name": "uhttpd",
+      "version": "2023-06-25-34a8a74d-1",
+      "normalised_version": "2023-06-25-34a8a74d",
+      "section": null,
+      "cves": []
+    },
+    {
+      "name": "kernel",
+      "version": "5.10.221-1-2183c0da82cf7f227aeb28af12597c52",
+      "normalised_version": "5.10.221-1-2183c0da82cf7f227aeb28af12597c52",
+      "section": null,
+      "cves": []
+    },
+    {
+      "name": "hostapd-common",
+      "version": "2022-01-16-cff80b4f-21.3",
+      "normalised_version": "2022-01-16-cff80b4f-21.3",
+      "section": null,
+      "cves": []
+    }
+  ]
+}

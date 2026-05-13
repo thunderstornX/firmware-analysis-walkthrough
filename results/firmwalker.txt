@@ -1,0 +1,523 @@
+***Firmware Directory***
+/home/alim/Desktop/my_github_portfolio/repos/firmware-analysis-walkthrough/work/squashfs-root/
+***Search for password files***
+##################################### passwd
+/bin/passwd
+/etc/passwd
+
+##################################### shadow
+/etc/shadow
+
+##################################### *.psk
+
+***Search for Unix-MD5 hashes***
+
+***List etc/ssl directory***
+total 10
+lrwxrwxrwx 1 alim docker 34 Jul 16  2024 cert.pem -> /etc/ssl/certs/ca-certificates.crt
+drwxr-xr-x 2 alim docker  3 Jul 16  2024 certs
+
+***Search for SSL related files***
+##################################### *.crt
+/etc/ssl/certs/ca-certificates.crt
+
+##################################### *.pem
+/etc/ssl/cert.pem
+
+##################################### *.cer
+
+##################################### *.p7b
+
+##################################### *.p12
+
+##################################### *.key
+
+
+***Search for SSH related files***
+##################################### authorized_keys
+
+##################################### *authorized_keys*
+
+##################################### host_key
+
+##################################### *host_key*
+/etc/dropbear/dropbear_ed25519_host_key
+/etc/dropbear/dropbear_rsa_host_key
+
+##################################### id_rsa
+
+##################################### *id_rsa*
+
+##################################### id_dsa
+
+##################################### *id_dsa*
+
+##################################### *.pub
+
+
+***Search for files***
+##################################### *.conf
+/lib/preinit/00_preinit.conf
+/usr/share/dnsmasq/rfc6761.conf
+/usr/share/dnsmasq/dhcpbogushostname.conf
+/etc/resolv.conf
+/etc/syslog.conf
+/etc/opkg.conf
+/etc/dnsmasq.conf
+/etc/sysctl.d/11-nf-conntrack.conf
+/etc/sysctl.d/10-default.conf
+/etc/sysctl.conf
+/etc/sysupgrade.conf
+/etc/ppp/resolv.conf
+/etc/opkg/customfeeds.conf
+/etc/opkg/distfeeds.conf
+
+##################################### *.cfg
+
+##################################### *.ini
+
+
+***Search for database related files***
+##################################### *.db
+/lib/firmware/regulatory.db
+
+##################################### *.sqlite
+
+##################################### *.sqlite3
+
+
+***Search for shell scripts***
+##################################### shell scripts
+/sbin/led.sh
+/lib/wifi/mac80211.sh
+/lib/preinit/10_fix_eth_mac.sh
+/lib/network/config.sh
+/lib/network/switch.sh
+/lib/functions/leds.sh
+/lib/functions/system.sh
+/lib/functions/preinit.sh
+/lib/functions/procd.sh
+/lib/functions/k2t.sh
+/lib/functions/uci-defaults.sh
+/lib/functions/service.sh
+/lib/functions/migrations.sh
+/lib/functions/caldata.sh
+/lib/functions/network.sh
+/lib/functions.sh
+/lib/netifd/proto/dhcpv6.sh
+/lib/netifd/proto/ppp.sh
+/lib/netifd/proto/dhcp.sh
+/lib/netifd/utils.sh
+/lib/netifd/netifd-proto.sh
+/lib/netifd/wireless/mac80211.sh
+/lib/netifd/dhcp-get-server.sh
+/lib/netifd/netifd-wireless.sh
+/lib/netifd/hostapd.sh
+/lib/uboot-envtools.sh
+/lib/config/uci.sh
+/lib/upgrade/dualboot_datachk.sh
+/lib/upgrade/openmesh.sh
+/lib/upgrade/fwtool.sh
+/lib/upgrade/platform.sh
+/lib/upgrade/failsafe_datachk.sh
+/lib/upgrade/luci-add-conffiles.sh
+/lib/upgrade/common.sh
+/lib/upgrade/redboot-fis.sh
+/bin/ipcalc.sh
+/usr/libexec/login.sh
+/usr/lib/dnsmasq/dhcp-script.sh
+/usr/share/libubox/jshn.sh
+/etc/uci-defaults/50-dnsmasq-migrate-resolv-conf-auto.sh
+/etc/uci-defaults/50-migrate-rpcd-ubus-sock.sh
+/etc/diag.sh
+
+***Search for other .bin files***
+##################################### bin files
+/lib/firmware/ath10k/QCA988X/hw2.0/board.bin
+/lib/firmware/ath10k/QCA988X/hw2.0/firmware-2.bin
+
+***Search for patterns in files***
+-------------------- upgrade --------------------
+/sbin/sysupgrade
+/sbin/upgraded
+/www/luci-static/resources/view/opkg.js
+/www/luci-static/resources/view/system/flash.js
+/lib/libfstools.so
+/lib/functions/system.sh
+/lib/functions/caldata.sh
+/lib/upgrade/stage2
+/lib/upgrade/dualboot_datachk.sh
+/lib/upgrade/openmesh.sh
+/lib/upgrade/fwtool.sh
+/lib/upgrade/do_stage2
+/lib/upgrade/common.sh
+/bin/opkg
+/usr/sbin/iw
+/usr/libexec/opkg-call
+/usr/libexec/validate_firmware_image
+/usr/lib/lua/luci/model/cbi/admin_system/backupfiles.lua
+/usr/lib/lua/luci/view/themes/bootstrap/header.htm
+/usr/lib/opkg/info/dnsmasq.list
+/usr/lib/opkg/info/mtd.control
+/usr/lib/opkg/info/luci-lib-nixio.list
+/usr/lib/opkg/info/busybox.list
+/usr/lib/opkg/info/uhttpd.list
+/usr/lib/opkg/info/luci-base.list
+/usr/lib/opkg/info/ppp.list
+/usr/lib/opkg/info/base-files.list
+/usr/lib/opkg/info/odhcp6c.list
+/usr/lib/opkg/info/uboot-envtools.list
+/usr/lib/opkg/info/netifd.list
+/usr/lib/opkg/info/opkg.list
+/usr/lib/opkg/info/firewall4.list
+/usr/share/rpcd/acl.d/luci-mod-system.json
+/etc/sysupgrade.conf
+/etc/diag.sh
+
+-------------------- admin --------------------
+/www/luci-static/resources/view/network/interfaces.js
+/www/luci-static/resources/ui.js
+/www/luci-static/resources/rpc.js
+/www/luci-static/resources/luci.js
+/www/luci-static/bootstrap/cascade.css
+/www/luci-static/bootstrap/mobile.css
+/usr/lib/libnftables.so.1.1.0
+/usr/lib/lua/luci/model/cbi/admin_system/backupfiles.lua
+/usr/lib/lua/luci/controller/admin/index.lua
+/usr/lib/lua/luci/controller/admin/uci.lua
+/usr/lib/lua/luci/view/themes/bootstrap/header.htm
+/usr/lib/lua/luci/dispatcher.lua
+/usr/lib/opkg/info/luci.control
+/usr/lib/opkg/info/luci-mod-network.list
+/usr/lib/opkg/info/luci-base.list
+/usr/lib/opkg/info/luci-mod-admin-full.control
+/usr/lib/opkg/status
+/usr/share/ucode/fw4.uc
+/usr/share/luci/menu.d/luci-base.json
+/usr/share/luci/menu.d/luci-mod-network.json
+/usr/share/luci/menu.d/luci-app-firewall.json
+/usr/share/luci/menu.d/luci-mod-system.json
+/usr/share/luci/menu.d/luci-app-opkg.json
+/usr/share/luci/menu.d/luci-mod-status.json
+
+-------------------- root --------------------
+/sbin/hotplug-call
+/sbin/urandom_seed
+/sbin/ujail
+/sbin/mount_root
+/sbin/procd
+/www/luci-static/resources/view/status/include/25_storage.js
+/www/luci-static/resources/view/network/dhcp.js
+/www/luci-static/resources/view/system/password.js
+/www/luci-static/resources/view/system/dropbear.js
+/www/luci-static/resources/view/system/crontab.js
+/www/luci-static/resources/view/system/mounts.js
+/www/luci-static/resources/form.js
+/www/luci-static/resources/ui.js
+/www/luci-static/bootstrap/cascade.css
+/lib/libfstools.so
+/lib/functions/preinit.sh
+/lib/functions.sh
+/lib/modules/5.10.221/usbcore.ko
+/lib/upgrade/stage2
+/lib/upgrade/dualboot_datachk.sh
+/lib/upgrade/platform.sh
+/lib/upgrade/common.sh
+/lib/upgrade/redboot-fis.sh
+/bin/busybox
+/bin/opkg
+/usr/sbin/dropbear
+/usr/sbin/fw_printenv
+/usr/sbin/odhcpd
+/usr/sbin/dnsmasq
+/usr/sbin/uhttpd
+/usr/sbin/pppd
+/usr/libexec/rpcd/luci
+/usr/lib/libnftables.so.1.1.0
+/usr/lib/lua/luci/view/themes/bootstrap/header.htm
+/usr/lib/lua/luci/dispatcher.lua
+/usr/lib/libjansson.so.4.13.0
+/usr/lib/pppd/2.4.9/pppoe.so
+/usr/share/rpcd/acl.d/luci-mod-system.json
+/etc/passwd
+/etc/config/uhttpd
+/etc/config/rpcd
+/etc/opkg.conf
+/etc/group
+/etc/banner.failsafe
+/etc/init.d/dnsmasq
+/etc/init.d/led
+/etc/init.d/dropbear
+/etc/shadow
+/etc/profile
+/etc/uci-defaults/10_migrate-shadow
+
+-------------------- password --------------------
+/sbin/rpcd
+/www/luci-static/resources/view/network/wireless.js
+/www/luci-static/resources/view/system/password.js
+/www/luci-static/resources/view/system/dropbear.js
+/www/luci-static/resources/view/bootstrap/sysauth.js
+/www/luci-static/resources/form.js
+/www/luci-static/resources/ui.js
+/www/luci-static/resources/luci.js
+/www/luci-static/resources/protocol/ppp.js
+/www/luci-static/resources/protocol/pptp.js
+/www/luci-static/resources/protocol/pppoa.js
+/www/luci-static/resources/protocol/6in4.js
+/www/luci-static/resources/protocol/l2tp.js
+/www/luci-static/resources/protocol/pppoe.js
+/www/luci-static/bootstrap/cascade.css
+/www/luci-static/bootstrap/mobile.css
+/lib/netifd/proto/ppp.sh
+/lib/netifd/hostapd.sh
+/bin/config_generate
+/bin/busybox
+/bin/uclient-fetch
+/usr/bin/usign
+/usr/sbin/dropbear
+/usr/sbin/wpad
+/usr/sbin/pppd
+/usr/libexec/rpcd/luci
+/usr/lib/lua/luci/view/sysauth.htm
+/usr/lib/lua/luci/view/themes/bootstrap/header.htm
+/usr/lib/lua/luci/view/themes/bootstrap/sysauth.htm
+/usr/lib/lua/luci/dispatcher.lua
+/usr/lib/lua/luci/sys.lua
+/usr/lib/opkg/info/luci-mod-system.list
+/usr/lib/libwolfssl.so.5.7.2.ee39414e
+/usr/share/luci/menu.d/luci-mod-system.json
+/etc/config/uhttpd
+/etc/config/rpcd
+/etc/banner.failsafe
+/etc/init.d/uhttpd
+/etc/ppp/chap-secrets
+/etc/profile
+/etc/uci-defaults/10_migrate-shadow
+
+-------------------- passwd --------------------
+/sbin/ujail
+/www/luci-static/resources/tools/widgets.js
+/lib/preinit/80_mount_root
+/lib/functions.sh
+/lib/libc.so
+/lib/upgrade/keep.d/base-files-essential
+/bin/busybox
+/usr/sbin/nft
+/usr/sbin/pppd
+/usr/libexec/rpcd/luci
+/usr/lib/lua/luci/sys.lua
+/usr/lib/lua/nixio.so
+/usr/lib/opkg/info/busybox.list
+/usr/lib/opkg/info/base-files.list
+/usr/lib/opkg/info/base-files.conffiles
+/usr/lib/opkg/status
+/etc/config/luci
+/etc/banner.failsafe
+/etc/init.d/dnsmasq
+/etc/profile
+/etc/uci-defaults/10_migrate-shadow
+
+-------------------- pwd --------------------
+/lib/libc.so
+/bin/busybox
+/usr/lib/opkg/info/busybox.list
+
+-------------------- dropbear --------------------
+/www/luci-static/resources/view/system/sshkeys.js
+/www/luci-static/resources/view/system/dropbear.js
+/lib/preinit/99_10_failsafe_dropbear
+/lib/upgrade/stage2
+/lib/upgrade/keep.d/base-files
+/usr/sbin/dropbear
+/usr/libexec/rpcd/luci
+/usr/lib/opkg/info/dropbear.conffiles
+/usr/lib/opkg/info/luci-mod-system.list
+/usr/lib/opkg/info/dropbear.control
+/usr/lib/opkg/info/dropbear.list
+/usr/lib/opkg/status
+/usr/share/rpcd/acl.d/luci-mod-system.json
+/usr/share/luci/menu.d/luci-mod-system.json
+/etc/config/dropbear
+/etc/config/ucitrack
+/etc/config/luci
+/etc/init.d/dropbear
+
+-------------------- ssl --------------------
+/lib/netifd/hostapd.sh
+/lib/libustream-ssl.so
+/lib/upgrade/luci-add-conffiles.sh
+/bin/uclient-fetch
+/bin/opkg
+/usr/sbin/uhttpd
+/usr/libexec/rpcd/luci
+/usr/lib/opkg/info/libustream-wolfssl20201210.list
+/usr/lib/opkg/info/libustream-wolfssl20201210.control
+/usr/lib/opkg/info/libwolfssl5.7.2.ee39414e.control
+/usr/lib/opkg/info/luci-ssl.control
+/usr/lib/opkg/info/ca-bundle.list
+/usr/lib/opkg/status
+/usr/lib/libwolfssl.so.5.7.2.ee39414e
+/usr/lib/libuclient.so
+/etc/init.d/uhttpd
+
+-------------------- private key --------------------
+/www/luci-static/resources/view/network/wireless.js
+/usr/bin/usign
+/usr/sbin/dropbear
+/usr/sbin/px5g
+/usr/sbin/uhttpd
+/usr/lib/libwolfssl.so.5.7.2.ee39414e
+/etc/config/uhttpd
+
+-------------------- telnet --------------------
+/etc/services
+
+-------------------- secret --------------------
+/www/luci-static/resources/view/network/wireless.js
+/usr/bin/usign
+/usr/sbin/dropbear
+/usr/sbin/pppd
+/usr/lib/libwolfssl.so.5.7.2.ee39414e
+
+-------------------- pgp --------------------
+/sbin/netifd
+/lib/libgcc_s.so.1
+
+-------------------- gpg --------------------
+/sbin/urngd
+/lib/firmware/ath10k/QCA988X/hw2.0/firmware-2.bin
+/bin/busybox
+/usr/sbin/wpad
+/usr/lib/libnftables.so.1.1.0
+/usr/lib/liblua.so.5.1.5
+/usr/lib/opkg/info/openwrt-keyring.control
+
+-------------------- token --------------------
+/www/luci-static/resources/ui.js
+/www/luci-static/resources/luci.js
+/www/luci-static/resources/validation.js
+/lib/modules/5.10.221/ath10k_core.ko
+/bin/busybox
+/usr/sbin/wpad
+/usr/sbin/pppd
+/usr/lib/libnftables.so.1.1.0
+/usr/lib/lua/luci/model/uci.lua
+/usr/lib/lua/luci/controller/admin/uci.lua
+/usr/lib/lua/luci/view/csrftoken.htm
+/usr/lib/lua/luci/view/header.htm
+/usr/lib/lua/luci/util.lua
+/usr/lib/lua/luci/dispatcher.lua
+/usr/lib/libjansson.so.4.13.0
+/usr/lib/libucode.so.20220812
+
+-------------------- api key --------------------
+
+-------------------- oauth --------------------
+
+
+***Search for web servers***
+##################################### search for web servers
+##################################### apache
+
+##################################### lighttpd
+
+##################################### alphapd
+
+##################################### httpd
+
+
+***Search for important binaries***
+##################################### important binaries
+##################################### ssh
+/usr/bin/ssh
+
+##################################### sshd
+
+##################################### scp
+/usr/bin/scp
+
+##################################### sftp
+
+##################################### tftp
+/etc/hotplug.d/tftp
+
+##################################### dropbear
+/usr/sbin/dropbear
+/etc/config/dropbear
+/etc/dropbear
+/etc/init.d/dropbear
+
+##################################### busybox
+/lib/upgrade/keep.d/busybox
+/bin/busybox
+
+##################################### telnet
+
+##################################### telnetd
+
+##################################### openssl
+
+
+***Search for ip addresses***
+##################################### ip addresses
+0.0.0.0
+10.1.2.3
+1.2.3.4
+127.0.0.0
+127.0.0.1
+192.168.0.1
+192.168.0.199
+192.168.10.1
+192.168.1.1
+192.168.1.2
+192.168.1.255
+192.168.16.235
+192.168.2.1
+192.168.2.2
+192.168.45.2
+194.25.2.129
+2.2.2.2
+255.0.0.0
+255.255.0.0
+255.255.255.0
+255.255.255.255
+64.94.110.11
+
+***Search for urls***
+##################################### urls
+http://*|\
+http://lua-users.org
+https://*)
+https://bugs.openwrt.org
+https://datatracker.ietf.org
+https://dev.openwrt.org
+https://downloads.openwrt.org
+https://forum.openwrt.org
+https://github.com
+https://openwrt.org
+https://' + window.location.hostname + ':' + '<%=https_port%>' + '<%=resource%>
+https://' + window.location.hostname + ':' + '<%=https_port%>' + window.location.pathname;
+https://www.rfc-editor.org
+http://www.apache.org
+http://www.candelatech.com
+http://www.example.com
+http://www.iana.org
+http://www.w3.org
+
+***Search for emails***
+##################################### emails
+blogic@openwrt.org
+carsten.tittel@fokus.fraunhofer.de
+cotequeiroz@gmail.com
+cshored@thecshore.com
+david@nut-bolt.nl
+dedeckeh@gmail.com
+greearb@candelatech.com
+hackpascal@gmail.com
+john@phrozen.org
+jo@mein.io
+jow@openwrt.org
+mail@aparcar.org
+nbd@nbd.name
+steven@midlink.org

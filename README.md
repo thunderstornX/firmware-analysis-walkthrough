@@ -11,6 +11,8 @@
 
 # firmware-analysis-walkthrough
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20480608.svg)](https://doi.org/10.5281/zenodo.20480608)
+
 A reproducible firmware-security pipeline applied to OpenWRT 22.03.7
 on the TP-Link Archer C7 v2 (`ath79` / `mips_24kc`). One firmware
 blob in, four scripts later, a directory full of evidence comes

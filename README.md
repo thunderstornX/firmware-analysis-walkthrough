@@ -37,6 +37,13 @@ under `samples/` (SHA-256
 * **16 NVD-confirmed CVEs** across 9 mapped components — 8 Critical, 5 High, 2 Medium, 1 Low.
   The Critical cluster is led by the seven dnsmasq heap overflows
   (`CVE-2021-45951..45957`) and busybox's `CVE-2022-48174`.
+  **Caveat:** for the seven dnsmasq CVEs, NVD records the upstream
+  vendor's position that they "do not represent real vulnerabilities"
+  (the dispute note is preserved verbatim in
+  [`results/cve_correlate.json`](results/cve_correlate.json)). They are
+  counted here as *NVD-listed*, not as confirmed-exploitable on this
+  image; this walkthrough demonstrates the correlation pipeline, not
+  exploitation.
 * **23 filesystem pattern hits** across 4 categories
   (`password_assignment`, `openssl_invocation`,
   `hardcoded_url_http`, `root_passwd_blank`).

@@ -145,7 +145,14 @@ which 9 have an entry in the NVD mapping table. The query returns
 16 CVEs in total: 8 Critical, 5 High, 2 Medium, and 1 Low. The
 critical bucket is dominated by the dnsmasq heap-overflow cluster
 (CVE-2021-45951 through CVE-2021-45957) and the busybox awk
-out-of-bounds writes published as CVE-2022-48174.
+out-of-bounds writes published as CVE-2022-48174. We note that for
+the seven dnsmasq entries the NVD record carries the upstream vendor's
+explicit position that they ``do not represent real vulnerabilities'';
+we therefore count them as \emph{NVD-listed} rather than
+confirmed-exploitable. The dispute note is surfaced verbatim by the
+correlation tool and preserved in \texttt{results/cve\_correlate.json}.
+The contribution of this work is the reproducible correlation
+pipeline, not exploitation of any specific CVE.
 
 \begin{table}[t]
 \caption{NVD findings for OpenWRT 22.03.7 (ath79).}

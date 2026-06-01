@@ -35,8 +35,8 @@ under `samples/` (SHA-256
 * **1371 inodes** extracted from SquashFS (1046 files / 122 dirs / 203 symlinks).
 * **144 packages** parsed from the opkg status manifest.
 * **16 NVD-confirmed CVEs** across 9 mapped components — 8 Critical, 5 High, 2 Medium, 1 Low.
-  The Critical cluster is led by the six dnsmasq heap overflows
-  (`CVE-2021-45951..45956`) and busybox's `CVE-2022-48174`.
+  The Critical cluster is led by the seven dnsmasq heap overflows
+  (`CVE-2021-45951..45957`) and busybox's `CVE-2022-48174`.
 * **23 filesystem pattern hits** across 4 categories
   (`password_assignment`, `openssl_invocation`,
   `hardcoded_url_http`, `root_passwd_blank`).
